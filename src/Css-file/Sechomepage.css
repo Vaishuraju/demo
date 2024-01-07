@@ -1,0 +1,62 @@
+
+.next-input{
+    padding: 10px;
+    width: 90%;
+
+}
+.next-input1{
+    border-radius: 40px;
+    height: 42px;
+    padding-left: 40px;
+}
+.next-input1:hover{
+         border: 1px solid rgb(233, 69, 96);
+         box-shadow: none;
+
+}
+
+.dropdown{
+     border-radius: 25px;
+    border-color: rgb(180, 175, 175);
+     border-radius: 25px;
+     height: 42px;
+     margin-bottom: 2px;
+padding: 5px;
+    
+}
+.sec-logo{
+    background-color: white;
+}
+/* .option{
+    padding: 10px;
+}
+/* .dropdown:hover{
+    background-color: rgb(246, 249, 252);
+    color: red;
+   
+} */
+.user-icon{
+    width: 25%;
+    height: 45px;
+    background-color: rgb(246, 249, 252);
+    padding: 12px;
+    border-radius: 50px; 
+    margin-left: 65px;
+}
+.sec-bag{
+    width: 25%;
+   height: 45px;
+   background-color: rgb(246, 249, 252);
+   padding: 12px;
+   border-radius: 50px;  
+   margin-left: 20px;
+
+  }
+  .dropdown{
+    display: flex;
+  }
+  .dropdown li:nth-child(3):hover .Service{
+             display: block;
+
+}
+  

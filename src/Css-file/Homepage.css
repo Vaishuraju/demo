@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300&display=swap');
+
+.heading{
+    margin-top: 140px;
+    font-family: 'Open Sans', sans-serif;
+}
+.first-section{
+    background-color: rgb(246, 249, 252);
+    padding-left: unset;
+    padding-right: unset;
+
+}
+
+.head{
+    font-size: 43px;
+    line-height: 1.5;
+    margin-block-start: 0.67em;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.second-input{
+    width: 95%;
+    padding:10px;
+
+  
+}
+.input2{
+     border-radius: 5px;
+     height: 45px;
+     outline: none;
+     margin-left: 16px;
+     font-weight: none;
+     font-weight: none;
+     font-family: 'Open Sans', sans-serif;
+    
+ 
+}
+.input2:focus{
+    border: 1px solid red;
+    box-shadow: none;
+    border-left: none;
+}
+.new:focus{
+    border: 1px solid red;
+}
+.btn-second{
+   border-radius: 25px;
+   width: 15%;
+   height: 45px;
+   margin-bottom: 2px;
+   background-color: rgb(233, 69, 96);
+   border: none;
+   border-radius: 5px;
+
+   
+}
+.btn1:hover{
+    background: rgb(233, 69, 96);
+}
+.new{
+    background-color: white;
+    position: absolute;  
+    margin-top: 10px;
+    padding-top: 10px;
+    border: 1px solid rgb(223, 215, 215);
+    width: 20%;
+    margin-left: 10px;
+    border-radius: 5px;
+    height: 45px;
+
+}
+.float-left{
+    width: 30%;
+    height: 315px;
+
+}
+.float-right{
+    width: 30%;
+    height: 315px;
+    float: inline-end;
+}
+.img{
+    background-color: rgb(246, 249, 252);
+}
+
+
+

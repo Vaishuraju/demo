@@ -1,0 +1,64 @@
+
+.market{
+    width: 50%;
+    height: 100px;
+    
+
+}
+.deliver{
+    width: 30%;
+    height: 100px;
+
+}
+.payment{
+    width: 25%;
+    height: 100px;
+}
+.deliver{
+    width: 30%;
+    height: 100px;
+}
+.para{
+   
+     width: 100%;
+     margin-top: 20px;
+}
+.light{
+      font-weight: 100;
+      color: rgb(125, 135, 156);
+}
+.th{
+    background-color: rgb(246, 249, 252);
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+.sub{
+    width: 95%;
+  
+}
+
+.main{
+    border-radius: 10px;
+    width: 25%;
+}
+.step{
+    margin: 10px;
+}
+.color{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(3, 0, 71, 0.09) 0px 1px 3px;
+    border-radius: 8px;
+}
+@media only screen and (max-width:1060px) {
+    .main{
+          width: 50%;
+
+    }
+}
+
+@media only screen and (max-width:755px) {
+    .main{
+          width: 100%;
+
+    }
+}

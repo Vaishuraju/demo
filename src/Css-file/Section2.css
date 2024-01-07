@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+}
+.bor-2{
+    border-radius: 5px;
+      width: 60%;
+      height: 4px;
+      background: rgb(223, 215, 215);    
+      border: none;
+      border-left: none;
+}
+.bor-1{
+  border-radius: 10px;
+  width: 60%;
+  height: 4px;
+  float:inline-end;
+  background: rgb(223, 13, 13);
+  border:none;
+  border-bottom-right-radius: none;
+  border-top-right-radius: none;
+}
+.helo{
+  display:flex;
+}
+.both-col{
+   height: 45px;
+   margin-bottom: 20px;
+}
+.link:hover{
+color: rgb(233, 69, 96);
+}
+.third{
+   margin-top: 70px;
+}
+.popular{
+  font-weight: bold;
+}
+.page{
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 20px;
+}
+.arrow1{
+  justify-content: end;
+  color: gray;
+   width: 25%;
+  height: 20px;
+  
+}
+.arrow{
+
+  font-size: 14px;
+  color: gray;
+
+}
+.drop{
+  width: 25%;
+  background-color: gray;
+}
+.drop1{
+   width: 75%;
+   background-color: aqua;
+}
+
+.font{
+  background-color: rebeccapurple;
+}
+
+.lime{
+    width: 100%;
+    height: 260px;
+    background-size: contain
+}
+.box{
+   font-size: 11px;
+   background: rgb(233, 69, 96);
+   width: 18%;
+   border-radius: 20px;
+   padding: 5px;
+   height: 25px;
+   color: white;
+}
+.hove{
+   width: 100%;
+}
+.eye{
+  width: 100%;
+  height: 20px;
+  margin-right: 10px;
+}
+.eye{
+  z-index:1;
+  display: none;
+  cursor: pointer;
+}
+p{
+  margin-bottom:0px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.code{
+  color: rgb(233, 69, 96);
+
+ 
+}
+.cd{
+  margin-left: 10px;
+  color: gray;
+}
+.code1{
+   color: gray;
+   font-weight:normal;
+}
+.plus{
+
+  height: 30px;
+   width: 100%;
+  color: red;
+   border-radius: 5px;
+   border: 1px solid rgb(233, 69, 96);
+
+}
+.plus:hover{
+  background-color: rgb(233, 69, 96);
+  color: white;
+}
+.plus1{
+  width: 10%;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.full{
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(3, 0, 71, 0.09) 0px 1px 3px;
+  border-radius: 8px;
+  width:65%;
+  margin: 10px;
+}  
+.carosel{
+  width: 80%;
+  height: 300px;
+}
+.boxi{
+ background-color: rgb(246, 249, 252);
+ height: 450px;
+}
+
+
+* { box-sizing: border-box; }
+  
+body { font-family: sans-serif; }
+
+.carousel {
+  width:70%;
+  background-color: rgb(167, 223, 245);
+
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 400px;
+  margin-right: 20px;
+  display: flex;
+  border-radius: 10px;
+  
+  
+}
+
+.carousel-cell.is-selected {
+  background: rgb(229, 147, 225);
+}
+.carousel-cell:before {
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
