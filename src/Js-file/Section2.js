@@ -146,8 +146,9 @@ export default function Carousel() {
             <h4>{card.title}</h4>
             <p>300ml</p>
           <div className='d-flex'>
-            <del><p>{card.amount}</p></del>
+            
             <p>{card.amount}</p>
+            <del><p>{card.amount}</p></del>
             </div>
             <ul>
               {card.features.map((feature, index) => (
