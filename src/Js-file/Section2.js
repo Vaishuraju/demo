@@ -65,6 +65,7 @@ import Slider from 'react-slick';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import '../Css-file/Section2.css'
 
 export default function Carousel() {
   const [sliderRef, setSliderRef] = useState();
@@ -80,51 +81,32 @@ export default function Carousel() {
     
       {
         offer:'7% off',
-        imageSrc:
-          'https://images.unsplash.com/photo-1559508551-44bff1de756b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80',
-        title: 'Studio Room',
-        description: 'Lorem ipsum dolor sit amet, consectur dolori',
-        pricingText: 'USD 50/Day',
+        imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Flime.png&w=1920&q=75',
+        title: 'Fresh Line',
+        amount:'$135.78',
         features: ['Free Wifi', 'Free breakfast'],
       },
       {
         offer:'9% off',
-        imageSrc:
-          'https://images.unsplash.com/photo-1616940844649-535215ae4eb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-        title: 'Deluxe Room',
+        imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2FMiniPeppers.png&w=1920&q=75',
         description: 'Lorem ipsum dolor sit amet, consectur dolori',
-        pricingText: 'USD 80/Day',
+        title: 'Mini Papers',
+        amount:'$100.10',
         features: ['Free Wifi', 'Free breakfast'],
       },
       {
         offer:'6% off',
-        imageSrc:
-          'https://images.unsplash.com/photo-1599619351208-3e6c839d6828?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80',
-        title: 'King Deluxe Room',
-        description: 'Lorem ipsum dolor sit amet, consectur dolori',
+        imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Fstrawberry.png&w=1920&q=75',
+        title: 'Fresh Strawberry',
+        amount:'$98.70',
         pricingText: 'USD 150/Day',
         features: ['Free Wifi', 'Free breakfast', 'Discounted Meals'],
       },
       {
-        offer:'6% off',
-        imageSrc:
-          'https://images.unsplash.com/photo-1461092746677-7b4afb1178f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-        title: 'Royal Suite',
-        description: 'Lorem ipsum dolor sit amet, consectur dolori',
-        pricingText: 'USD 299/Day',
-        features: [
-          'Free Wifi',
-          'Free breakfast',
-          'Discounted Meals',
-          "MacBook for work use (hotel's property)",
-        ],
-      },
-      {
         offer:'7% off',
-        imageSrc:
-          'https://images.unsplash.com/photo-1461092746677-7b4afb1178f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-        title: 'Royal Suite',
-        description: 'Lorem ipsum dolor sit amet, consectur dolori',
+        imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2FLemon.png&w=1920&q=75',
+        title: 'Lemon',
+        amount:'$215.76',
         pricingText: 'USD 299/Day',
         features: [
           'Free Wifi',
@@ -133,13 +115,11 @@ export default function Carousel() {
           "MacBook for work use (hotel's property)",
         ],
       },
-      {
+         {
         offer:'11% off',
-        imageSrc:
-          'https://images.unsplash.com/photo-1461092746677-7b4afb1178f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-        title: 'Royal Suite',
-        description: 'Lorem ipsum dolor sit amet, consectur dolori',
-        pricingText: 'USD 299/Day',
+        imageSrc: 'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2FOrange.png&w=1920&q=75',
+        title: 'Fresh Orange',
+        amount:'$145.96',
         features: [
           'Free Wifi',
           'Free breakfast',
@@ -150,7 +130,8 @@ export default function Carousel() {
     ]
   
   return (
-    <div className='content'>
+  
+    <div className='first-carousel ms-auto'>
       <button onClick={() => sliderRef?.slickPrev()}>
         <FaChevronLeft />
       </button>
@@ -159,15 +140,18 @@ export default function Carousel() {
       </button>
       <Slider ref={(slider) => setSliderRef(slider)} {...sliderSettings}>
         {hotelCards.map((card, index) => (
-          <div key={index}>
+          <div key={index} className='first-carousel-card '>
             <p>{card.offer}</p>
             <img src={card.imageSrc} alt={card.title} />
-          
-            <h2>{card.title}</h2>
-            <p>{card.description}</p>
+            <h4>{card.title}</h4>
+            <p>300ml</p>
+          <div className='d-flex'>
+            <del><p>{card.amount}</p></del>
+            <p>{card.amount}</p>
+            </div>
             <ul>
               {card.features.map((feature, index) => (
-                <li key={index}>feature}</li>
+                <li key={index}>{feature}</li>
               ))}
             </ul>
             <p>{card.pricingText}</p>
