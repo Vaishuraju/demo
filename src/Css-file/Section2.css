@@ -5,27 +5,28 @@
 .first-carousel{
   width: 70%;
   height: 700px;
-  background-color: rebeccapurple;
+  
+}
+.first-carousel-container{
+  background-color: rgb(246, 249, 252);
 }
 .first-carousel-card{
      height:410px;
      padding: 10px;
-     width: 50%;
-     border:rgb(155, 24, 24) solid 10px;
-     background-color: rgb(255, 255, 255);
-     box-shadow: rgba(3, 0, 71, 0.09) 0px 1px 3px;
-     border-radius: 18px;
+     background-color: rgb(246, 249, 252);
+
+    
 }
 .first-carousel-image{
        width: 100%;
 }
 .first-carousel-offer{
   font-size: 10px;
-  background-color: rgb(233, 69, 96);
   width: 18%;
   height: 25px;
   border-radius: 15px;
   color: white;
+  background-color: rgb(233, 69, 96) ;
   padding-top: 5px;
   text-align: center;
 
@@ -54,4 +55,20 @@
   font-size: 14px;
   font-weight: 700;
    color: rgb(125, 135, 156);
+}
+.first-carousel-leftarrow{
+           position: absolute;
+           top: 100px;
+}
+.first-carousel-rightarrow{
+  
+}
+.helo{
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  box-shadow: rgba(3, 0, 71, 0.09) 0px 1px 3px;
+  border-radius: 18px;
+}
+.slick-arrow{
+         background-color: red;
 }

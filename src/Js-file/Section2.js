@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import { FaCircleArrowLeft } from "react-icons/fa6";
+import { FaCircleArrowRight } from "react-icons/fa6";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../Css-file/Section2.css'
@@ -52,17 +53,12 @@ export default function Carousel() {
     ]
   
   return (
-  <Container>
+  <Container className='first-carousel-container'>
     <div className='first-carousel ms-auto'>
-      <button onClick={() => sliderRef?.slickPrev()}>
-        <FaChevronLeft />
-      </button>
-      <button onClick={() => sliderRef?.slickNext()}>
-        <FaChevronRight />
-      </button>
       <Slider ref={(slider) => setSliderRef(slider)} {...sliderSettings}>
         {hotelCards.map((card, index) => (
           <div key={index} className='first-carousel-card '>
+            <div className='helo'>
             <p className='first-carousel-offer'>{card.offer}</p>
             <img src={card.imageSrc} alt={card.title} className='first-carousel-image' />
             <p className='first-carousel-title-name'>{card.title}</p>
@@ -70,6 +66,7 @@ export default function Carousel() {
             <div className='d-flex' >
             <span className='first-carousel-rating d-flex'>{card.amount}</span> 
             <span className='first-carousel-deleted' ><del>{card.amount}</del></span>
+            </div>
             </div>
           </div>
         ))}

@@ -28,9 +28,9 @@ function Section3() {
   return (
     
     <div>
-          <Navbar/>
-         <Homepage/>
-          <Section1/>
+        <Navbar/>
+        <Homepage/>
+         <Section1/>
    
         <Container fluid className='navbar first-section ' lg={12} md={6}>
             <Row className='mx-auto'>
@@ -72,22 +72,6 @@ function Section3() {
            </Col>
          </Row>
         </Container>
-{/*      
-         {data.map((item) => (
-        
-          <Four
-             percentage={item.percentage}
-             head={item.head}
-             us={item.us}
-             id={item.id}
-
-             percentage1={item.percentage1}
-             head1={item.head1}
-             us1={item.us1}
-             id1={item.id1}
-          />
-          
-         ))}   */}
          <Section2/>
 
     </div>
