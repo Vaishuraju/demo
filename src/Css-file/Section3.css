@@ -44,13 +44,16 @@ li{
     margin-top: 15px;
     
 }
-.list:hover{
-    color: red;
-}
+
 .order{
   padding: 10px;
 }
-
+.dropdown{
+   margin-left: 15px;
+}
+#example-collapse-text{
+  margin-left: 15px;
+}
 @media only screen and (min-width:1025px) {
   .Col{
         width:23%;
@@ -64,22 +67,3 @@ li{
 
   }
 }
-
-
-/* .scroll::-webkit-scrollbar {
-  width: 6px;
-}
-.scroll::-webkit-scrollbar-track {
-  background-color: rgb(255, 255, 255);
- 
-}
-.scroll::-webkit-scrollbar-thumb {
-  box-shadow: inset 0 0 700px rgba(133, 127, 127, 0.3);
-  border-radius: 10px;
-}
-.scroll{
-   overflow-y: auto;
-   height: 400px;
-   border-radius: 5px;
-   font-weight: bold;
-} */

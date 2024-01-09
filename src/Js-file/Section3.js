@@ -13,18 +13,26 @@ import Homepage from './Homepage.js';
 import Navbar from './Navbar.js';
 import Section2 from './Section2.js';
 import '../Css-file/Section3.css'
-
-
-
-
+import { useState } from 'react';
+import { IoIosArrowForward, IoIosArrowDown } from 'react-icons/io';
+import { PiCarrotThin } from "react-icons/pi";
+import Collapse from 'react-bootstrap/Collapse';
+import Button from 'react-bootstrap/Button';
 
 
 
 
 function Section3() {
 
-  let data=[{percentage:"7% off",head:"Fresh Line",us:"US$135.78", id:"US$7.00",
-            percentage1:"6% off", head1:"Fresh Strawberry",us1:"US$98.70",id1:"US$6.00"}]
+
+  const [open, setOpen] = useState(false);
+
+  const toggleCollapse = () => {
+    setOpen(!open);
+
+  }
+
+  
   return (
     
     <div>
@@ -47,10 +55,25 @@ function Section3() {
                 <li className='list mt-2'><LuMilk /><Link className='list' to="/link1">Dariry & Eggs</Link></li>
                 <li className='list mt-2'> <GiFrozenOrb /><Link className='list' to="/link1">Breakfast</Link></li>
                 <li className='list mt-2'> <GiPopcorn /><Link className='list' to="/link1">Frozen</Link></li>
-                <li className='list mt-2'> <GiFrozenOrb /><Link className='list' to="/link1">Vegetables</Link></li>
-                <li className='list mt-2'> <GiFrozenOrb /><Link className='list' to="/link1"></Link></li>
-          
-              </ul>
+                
+                <li><PiCarrotThin />
+<div className='dropdown'
+        onClick={toggleCollapse}
+        aria-controls="example-collapse-text"
+        aria-expanded={open}
+        variant="outline-primary" // You can customize the variant as needed
+      >gkhjkhjkh
+        {open ? <IoIosArrowDown /> : <IoIosArrowForward />} 
+      </div>
+      <Collapse in={open}>
+        <div id="example-collapse-text">
+         <li>jdfsflkjalf</li>
+         <li>jdfsflkjalf</li>
+         <li>jdfsflkjalf</li>
+        </div>
+      </Collapse>
+      </li>
+      </ul>
               <h6 className='categories'>Top Categories
                         <div className='code'>
                             <span className='bor-1 ' ></span>

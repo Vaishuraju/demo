@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import '../Css-file/Section2.css'
 import { Container } from 'react-bootstrap';
 
+
 export default function Carousel() {
   const [sliderRef, setSliderRef] = useState();
 
