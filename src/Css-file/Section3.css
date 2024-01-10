@@ -54,16 +54,15 @@ li{
 #example-collapse-text{
   margin-left: 15px;
 }
-@media only screen and (min-width:1025px) {
-  .Col{
-        width:23%;
-
-  }
+.carrot-icon{
+  margin: 5px 10px;
 }
-
-@media only screen and (max-width:547px) {
-  .Col{
-        width: 100%;
-
-  }
+.carrot-icon:hover{
+  color:rgb(223, 13, 13);
+}
+.list:hover{
+    color:rgb(223, 13, 13);
+}
+.sidenav-bar{
+     margin-bottom: 145px;
 }

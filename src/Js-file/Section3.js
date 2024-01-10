@@ -40,9 +40,9 @@ function Section3() {
         <Homepage/>
          <Section1/>
    
-        <Container fluid className='navbar first-section ' lg={12} md={6}>
+        <Container fluid className='navbar first-section '>
             <Row className='mx-auto'>
-                <Col>
+                <Col lg={3} className='sidenav-bar'>
                     <div className='Col'>
                     <h6 className='categories'>Top Categories
                         <div className='code'>
@@ -56,24 +56,24 @@ function Section3() {
                 <li className='list mt-2'> <GiFrozenOrb /><Link className='list' to="/link1">Breakfast</Link></li>
                 <li className='list mt-2'> <GiPopcorn /><Link className='list' to="/link1">Frozen</Link></li>
                 
-                <li><PiCarrotThin />
-<div className='dropdown'
-        onClick={toggleCollapse}
-        aria-controls="example-collapse-text"
-        aria-expanded={open}
-        variant="outline-primary" // You can customize the variant as needed
-      >gkhjkhjkh
-        {open ? <IoIosArrowDown /> : <IoIosArrowForward />} 
-      </div>
-      <Collapse in={open}>
-        <div id="example-collapse-text">
-         <li>jdfsflkjalf</li>
-         <li>jdfsflkjalf</li>
-         <li>jdfsflkjalf</li>
-        </div>
-      </Collapse>
-      </li>
-      </ul>
+                <li className='carrot-icon'><PiCarrotThin />
+               <div className='dropdown'
+                  onClick={toggleCollapse}
+                  aria-controls="example-collapse-text"
+                  aria-expanded={open}
+                  variant="outline-primary" // You can customize the variant as needed
+                >gkhjkhjkh
+                  {open ? <IoIosArrowDown /> : <IoIosArrowForward />} 
+                </div>
+                <Collapse in={open}>
+                  <div id="example-collapse-text">
+                  <li>jdfsflkjalf</li>
+                  <li>jdfsflkjalf</li>
+                  <li>jdfsflkjalf</li>
+                  </div>
+                </Collapse>
+                </li>
+            </ul>
               <h6 className='categories'>Top Categories
                         <div className='code'>
                             <span className='bor-1 ' ></span>
@@ -93,9 +93,12 @@ function Section3() {
               </ul>
         </div>
            </Col>
+           <Col lg={9}>
+           <Section2/>
+           </Col>
          </Row>
         </Container>
-         <Section2/>
+
 
     </div>
   )
