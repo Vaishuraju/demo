@@ -4,12 +4,7 @@
        margin-bottom:0px;
        font-weight: 600;
 }
-.Col{
-    background-color: rgb(255, 255, 255);
-    box-shadow: rgba(3, 0, 71, 0.09) 0px 1px 3px;
-    border-radius: 8px;
-     
-}
+
 .bor-2{
    
       width: 40%;
@@ -66,3 +61,32 @@ li{
 .sidenav-bar{
      margin-bottom: 145px;
 }
+.col-scroll{
+  width: 100%;
+  height: 600px;
+  overflow: auto; 
+  border-radius: 20px; 
+}
+.col-scroll{
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(3, 0, 71, 0.09) 0px 1px 3px;
+  border-radius: 8px;
+   
+}
+::-webkit-scrollbar {
+  width: 5px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(182, 182, 182);
+  height: 500px;
+}
+

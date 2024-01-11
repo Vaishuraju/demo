@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import Slider from 'react-slick';
-import { FaCircleArrowLeft } from "react-icons/fa6";
-import { FaCircleArrowRight } from "react-icons/fa6";
+import { IoMdArrowDropright } from "react-icons/io";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../Css-file/Section2.css'
-import { Container } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 
 
 export default function Carousel() {
@@ -56,6 +55,21 @@ export default function Carousel() {
   return (
   <Container className='first-carousel-container'>
     <div className='first-carousel ms-auto'>
+     <Row className='first-carousel-row'>
+      <Col md={6}>
+      <div>     
+      <h3 className='first-carousel-products'>Popular Products</h3>
+      <p className='first-carousel-collections'>Best collection in 2021 for you!</p>
+      </div>
+
+      </Col>
+      <Col className="first-carousel-col"md={6}>
+        <div className='first-carousel-viewbtn'>
+          <span>View all<IoMdArrowDropright /></span>
+
+        </div>
+      </Col>
+      </Row>
       <Slider ref={(slider) => setSliderRef(slider)} {...sliderSettings}>
         {hotelCards.map((card, index) => (
           <div key={index} className='first-carousel-card '>
