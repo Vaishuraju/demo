@@ -17,6 +17,7 @@ import { useState } from 'react';
 import { IoIosArrowForward, IoIosArrowDown } from 'react-icons/io';
 import { PiCarrotThin } from "react-icons/pi";
 import Collapse from 'react-bootstrap/Collapse';
+import { IoMdArrowDropright } from "react-icons/io";
 
 
 
@@ -117,12 +118,54 @@ Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
         </div>
            </Col>
            <Col lg={9}>
-            71
+           <Row className='first-carousel-row'>
+      <Col md={6}>
+      <div>     
+      <h3 className='first-carousel-products'>Popular Products</h3>
+      <p className='first-carousel-collections'>Best collection in 2021 for you!</p>
+      </div>
+
+      </Col>
+      <Col className="first-carousel-col"md={6}>
+        <div className='first-carousel-viewbtn'>
+          <span>View all<IoMdArrowDropright /></span>
+
+        </div>
+      </Col>
+      </Row>
     
            <Section2/>
-           72
+           <Row className='first-carousel-row'>
+      <Col md={6}>
+      <div>     
+      <h3 className='first-carousel-products'>Popular Products</h3>
+      <p className='first-carousel-collections'>Best collection in 2021 for you!</p>
+      </div>
+
+      </Col>
+      <Col className="first-carousel-col"md={6}>
+        <div className='first-carousel-viewbtn'>
+          <span>View all<IoMdArrowDropright /></span>
+
+        </div>
+      </Col>
+      </Row>
            <Section2/>
-           73
+           <Row className='first-carousel-row'>
+      <Col md={6}>
+      <div>     
+      <h3 className='first-carousel-products'>Popular Products</h3>
+      <p className='first-carousel-collections'>Best collection in 2021 for you!</p>
+      </div>
+
+      </Col>
+      <Col className="first-carousel-col"md={6}>
+        <div className='first-carousel-viewbtn'>
+          <span>View all<IoMdArrowDropright /></span>
+
+        </div>
+      </Col>
+      </Row>
            <Section2/>
            </Col>
          </Row>
