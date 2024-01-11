@@ -117,8 +117,12 @@ Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
         </div>
            </Col>
            <Col lg={9}>
+            71
+    
            <Section2/>
+           72
            <Section2/>
+           73
            <Section2/>
            </Col>
          </Row>
