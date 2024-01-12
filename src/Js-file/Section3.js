@@ -18,8 +18,9 @@ import { IoIosArrowForward, IoIosArrowDown } from 'react-icons/io';
 import { PiCarrotThin } from "react-icons/pi";
 import Collapse from 'react-bootstrap/Collapse';
 import { IoMdArrowDropright } from "react-icons/io";
-import Section2sub from './Section2sub.js';
-
+import Section2sub1 from './Section2sub1.js';
+import Section2sub2 from './Section2sub2.js'
+import Section2sub3 from './Section2sub3.js';
 
 
 
@@ -167,7 +168,11 @@ Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
         </div>
       </Col>
       </Row>
-           <Section2sub/>
+           <Section2sub1/>
+           <Section2sub2/>
+
+           <Section2sub3/>
+
            </Col>
          </Row>
         </Container>

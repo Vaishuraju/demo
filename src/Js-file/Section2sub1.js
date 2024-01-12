@@ -1,13 +1,10 @@
-import React, { useState } from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import React from 'react';
 import '../Css-file/Section2.css'
 import '../Css-file/Section2sub.css'
-import { Col, Container, Row } from 'react-bootstrap';
-import imageSrc from '../Image/Orange.png'
+import { Container } from 'react-bootstrap';
 
-function Section2sub() {
+
+function Section2sub1() {
 
   const hotelCards = [
       {
@@ -20,7 +17,7 @@ function Section2sub() {
       },
       {
         offer:'9% off',
-        imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Flime.png&w=1920&q=75',
+        imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2FMiniPeppers.png&w=1920&q=75',
 
        
         title: 'Mini Papers',
@@ -29,8 +26,7 @@ function Section2sub() {
       },
       {
         offer:'6% off',
-        imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Flime.png&w=1920&q=75',
-
+        imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Fstrawberry.png&w=1920&q=75',
         title: 'Fresh Strawberry',
         amount:'US$98.70',
       },
@@ -61,4 +57,4 @@ function Section2sub() {
   );
 }
 
-export default Section2sub
+export default Section2sub1
