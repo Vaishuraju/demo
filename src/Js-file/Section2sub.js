@@ -3,60 +3,46 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../Css-file/Section2.css'
+import '../Css-file/Section2sub.css'
 import { Col, Container, Row } from 'react-bootstrap';
+import imageSrc from '../Image/Orange.png'
 
-
-export default function Carousel() {
-  const [sliderRef, setSliderRef] = useState();
-
-  const sliderSettings = {
-    arrows: true,
-    slidesToShow: 3,
-    slidesToScroll: 2,
-    infinite: true,
-  };
+function Section2sub() {
 
   const hotelCards = [
       {
         offer:'7% off',
         imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Flime.png&w=1920&q=75',
+
+
         title: 'Fresh Line',
         amount:'US$135.78',
       },
       {
         offer:'9% off',
-        imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2FMiniPeppers.png&w=1920&q=75',
+        imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Flime.png&w=1920&q=75',
+
+       
         title: 'Mini Papers',
         amount:'US$100.10',
 
       },
       {
         offer:'6% off',
-        imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Fstrawberry.png&w=1920&q=75',
+        imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Flime.png&w=1920&q=75',
+
         title: 'Fresh Strawberry',
         amount:'US$98.70',
       },
-      {
-        offer:'7% off',
-        imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2FLemon.png&w=1920&q=75',
-        title: 'Lemon',
-        amount:'US$215.76',
-    
-      },
-         {
-        offer:'11% off',
-        imageSrc: 'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2FOrange.png&w=1920&q=75',
-        title: 'Fresh Orange',
-        amount:'US$145.96',
-      },
+
     ]
   
   return (
-  <Container className='first-carousel-container'>
+    <Container className='first-carousel-container'>
     <div className='first-carousel ms-auto'>
-      <Slider ref={(slider) => setSliderRef(slider)} {...sliderSettings}>
+     
         {hotelCards.map((card, index) => (
-          <div key={index} className='first-carousel-card '>
+          <div key={index} className='first-carousel-card1 '>
             <div className='first-carousel-color'>
             <p className='first-carousel-offer'>{card.offer}</p>
             <img src={card.imageSrc} alt={card.title} className='first-carousel-image' />
@@ -69,8 +55,10 @@ export default function Carousel() {
             </div>
           </div>
         ))}
-      </Slider>
+
     </div>
     </Container>
   );
 }
+
+export default Section2sub

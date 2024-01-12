@@ -1,0 +1,18 @@
+.section2sub-row{
+     width: 100%;
+     margin-left: 5px;
+}
+.first-carousel-card1{
+     height:410px;
+     background-color: rgb(246, 249, 252);
+}
+.d{
+     display: inline-block;
+}
+
+.first-carousel-card1{
+     display: inline-block;
+     width: 31%;
+     height: 100px;
+     margin: 10px;
+}

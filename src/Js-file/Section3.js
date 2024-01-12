@@ -18,6 +18,7 @@ import { IoIosArrowForward, IoIosArrowDown } from 'react-icons/io';
 import { PiCarrotThin } from "react-icons/pi";
 import Collapse from 'react-bootstrap/Collapse';
 import { IoMdArrowDropright } from "react-icons/io";
+import Section2sub from './Section2sub.js';
 
 
 
@@ -138,7 +139,7 @@ Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
            <Row className='first-carousel-row'>
       <Col md={6}>
       <div>     
-      <h3 className='first-carousel-products'>Popular Products</h3>
+      <h3 className='first-carousel-products'>Trending Products</h3>
       <p className='first-carousel-collections'>Best collection in 2021 for you!</p>
       </div>
 
@@ -154,7 +155,7 @@ Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
            <Row className='first-carousel-row'>
       <Col md={6}>
       <div>     
-      <h3 className='first-carousel-products'>Popular Products</h3>
+      <h3 className='first-carousel-products'>All Products</h3>
       <p className='first-carousel-collections'>Best collection in 2021 for you!</p>
       </div>
 
@@ -166,7 +167,7 @@ Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
         </div>
       </Col>
       </Row>
-           <Section2/>
+           <Section2sub/>
            </Col>
          </Row>
         </Container>
