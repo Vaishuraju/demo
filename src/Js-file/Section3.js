@@ -43,8 +43,8 @@ function Section3() {
          <Section1/>
    
         <Container fluid className='navbar first-section '>
-            <Row className='mx-auto'>
-                <Col lg={3} className='sidenav-bar'>
+            <Row className='nav-row mx-auto'>
+                <Col lg={3} className='sidenav-bar sticky-top d-none d-md-none d-lg-block'>
                     <div className='col-scroll'>
                     <h6 className='categories'>Top Categories
                         <div className='code'>
@@ -119,7 +119,7 @@ Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ip
               </ul>
         </div>
            </Col>
-           <Col lg={9}>
+           <Col className='Productss' lg={9}>
            <Row className='first-carousel-row'>
       <Col md={6}>
       <div>     

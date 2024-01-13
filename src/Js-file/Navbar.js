@@ -30,7 +30,7 @@ function Navbar() {
     </div>
     <div class="col3 d-flex flex-row ">
       <div class="second-icons d-none d-md-none d-lg-block mt-2  ">
-         <div className='nav-icon'><CiUser  className='user'/><IoBagOutline  className='bag ' /></div>
+         <div className='nav-icon '><CiUser  className='user'/><IoBagOutline  className='bag ' /></div>
       </div> 
     </div>
   </div>

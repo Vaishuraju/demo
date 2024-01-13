@@ -10,10 +10,7 @@ function Section2sub2() {
       {
         offer:'7% off',
         imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2FLemon.png&w=1920&q=75',
-
-
-
-        title: 'Fresh Line',
+        title: 'Lemon',
         amount:'US$135.78',
       },
       {
@@ -21,14 +18,14 @@ function Section2sub2() {
         imageSrc: 'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2FOrange.png&w=1920&q=75',
 
        
-        title: 'Mini Papers',
+        title: 'Fresh Orange',
         amount:'US$100.10',
 
       },
       {
         offer:'6% off',
         imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Flime.png&w=1920&q=75',
-        title: 'Fresh Strawberry',
+        title: 'Fresh Line',
         amount:'US$98.70',
       },
 

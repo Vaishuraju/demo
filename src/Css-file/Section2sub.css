@@ -16,3 +16,13 @@
      height: 100px;
      margin: 10px;
 }
+.first-carousel-image-fruit{
+       width: 100%;
+       height: 260px;
+}
+.first-carousel-button{
+     background-color: rgb(233, 69, 96) ;
+     border: none;
+     font-weight:bold;
+
+}

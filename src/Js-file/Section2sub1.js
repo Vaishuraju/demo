@@ -10,16 +10,12 @@ function Section2sub1() {
       {
         offer:'7% off',
         imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2Flime.png&w=1920&q=75',
-
-
         title: 'Fresh Line',
         amount:'US$135.78',
       },
       {
         offer:'9% off',
         imageSrc:'https://bonik-react.vercel.app/_next/image?url=%2Fassets%2Fimages%2FGroceries%20Shop%2FMiniPeppers.png&w=1920&q=75',
-
-       
         title: 'Mini Papers',
         amount:'US$100.10',
 
