@@ -24,7 +24,6 @@ function Homepage() {
         
       <InputGroup className='second-input mx-auto'>
               <Form.Control className='input2' placeholder='Search and hit enter...'/>
-            
               <Button className='btn-second' variant="outline-secondary text-white">Search</Button>
           </InputGroup>
         </div>

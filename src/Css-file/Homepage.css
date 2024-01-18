@@ -47,8 +47,9 @@
 }
 .btn-second{
    border-radius: 25px;
-   width: 15%;
+   width: 22%;
    height: 45px;
+   margin: 0 auto;
    margin-bottom: 2px;
    background-color: rgb(233, 69, 96);
    border: none;

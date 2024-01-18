@@ -73,7 +73,7 @@ function Section3() {
                 <li className='list mt-2'><LuMilk className='list-icon' /><Link className='list' to="/link1">Dariry & Eggs</Link></li>
                 <li className='list mt-2'> <GiFrozenOrb className='list-icon' /><Link className='list' to="/link1">Breakfast</Link></li>
                 <li className='list mt-2'> <GiPopcorn className='list-icon' /><Link className='list' to="/link1">Frozen</Link></li>
-              <div className='d-flex'>   
+              <div className=' mt-2'>   
                   <div className='carrot-icons'><PiCarrotThin className="carrot-icon" />
                  <div className='dropdown ' onClick={firstdropdown} aria-controls="example-collapse-text" aria-expanded={open} >Vegetables
                   {open ? <IoIosArrowDown className='arrow-icon'/> : <IoIosArrowForward className='arrow-icon' />} 
@@ -130,6 +130,56 @@ function Section3() {
                      </h6> 
 
                <ul className='order'>
+
+               <div className=' mt-2'>   
+                  <div className='carrot-icons'><PiCarrotThin className="carrot-icon" />
+                 <div className='dropdown ' onClick={firstdropdown} aria-controls="example-collapse-text" aria-expanded={open} >
+                  Fish and Mil
+                  {open ? <IoIosArrowDown className='arrow-icon'/> : <IoIosArrowForward className='arrow-icon' />} 
+                </div>
+                <Collapse className='dropdown-list'  in={open}>
+                  <div id="example-collapse-text">
+                  <li >Pears, apples, quinces</li>
+                  <li>Peaches, plums, apricots</li>
+                  <li>Grapes</li>
+                  </div>
+                </Collapse>
+                </div>
+                </div> 
+
+                <div className=' mt-2'>   
+                  <div className='carrot-icons'><PiCarrotThin className="carrot-icon" />
+                 <div className='dropdown ' onClick={firstdropdown} aria-controls="example-collapse-text" aria-expanded={open} >
+                  Health and beauty
+                  {open ? <IoIosArrowDown className='arrow-icon'/> : <IoIosArrowForward className='arrow-icon' />} 
+                </div>
+                <Collapse className='dropdown-list'  in={open}>
+                  <div id="example-collapse-text">
+                  <li >Onion</li>
+                  <li>Potato</li>
+                  <li>Vegetable Pack</li>
+                  </div>
+                </Collapse>
+                </div>
+                </div> 
+
+                <div className=' mt-2'>   
+                  <div className='carrot-icons'><PiCarrotThin className="carrot-icon" />
+                 <div className='dropdown ' onClick={firstdropdown} aria-controls="example-collapse-text" aria-expanded={open} >
+                  Dress and something
+                  {open ? <IoIosArrowDown className='arrow-icon'/> : <IoIosArrowForward className='arrow-icon' />} 
+                </div>
+                <Collapse className='dropdown-list'  in={open}>
+                  <div id="example-collapse-text">
+                  <li >Pears, apples, quinces</li>
+                  <li>Peaches, plums, apricots</li>
+                  <li>Grapes</li>
+                  </div>
+                </Collapse>
+                </div>
+                </div> 
+
+
                 <li className='list mt-2'><LuMilk className='list-icon' /><Link className='list' to="/link1">Dariry & Eggs</Link></li>
                 <li className='list mt-2'> <GiFrozenOrb className='list-icon' /><Link className='list' to="/link1">Breakfast</Link></li>
                 <li className='list mt-2'> <GiPopcorn className='list-icon' /><Link className='list' to="/link1">Frozen</Link></li>
