@@ -54,7 +54,7 @@ function Section2sub3() {
         ))}
 
     </div>
-    <Button className='first-carousel-button'>Load More...</Button>
+    <Button className='first-carousel-button mx-auto'>Load More...</Button>
     </Container>
   );
 }
