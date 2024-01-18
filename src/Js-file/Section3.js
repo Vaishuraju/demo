@@ -24,6 +24,7 @@ import Section2sub3 from './Section2sub3.js';
 
 
 
+
 function Section3() {
 
 
@@ -44,7 +45,7 @@ function Section3() {
    
         <Container fluid className='navbar first-section '>
             <Row className='nav-row mx-auto'>
-                <Col lg={3} className='sidenav-bar sticky-top d-none d-md-none d-lg-block'>
+                <Col lg={3} className='sidenav-bar sticky-top d-none d-md-none d-xl-block'>
                     <div className='col-scroll'>
                     <h6 className='categories'>Top Categories
                         <div className='code'>
@@ -54,27 +55,30 @@ function Section3() {
                      </h6> 
     
              <ul className='order'>
-                <li className='list mt-2'><LuMilk /><Link className='list' to="/link1">Dariry & Eggs</Link></li>
-                <li className='list mt-2'> <GiFrozenOrb /><Link className='list' to="/link1">Breakfast</Link></li>
-                <li className='list mt-2'> <GiPopcorn /><Link className='list' to="/link1">Frozen</Link></li>
-                
-                <li className='carrot-icon'><PiCarrotThin />
-               <div className='dropdown'
+                <li className='list mt-2'><LuMilk className='list-icon' /><Link className='list' to="/link1">Dariry & Eggs</Link></li>
+                <li className='list mt-2'> <GiFrozenOrb className='list-icon' /><Link className='list' to="/link1">Breakfast</Link></li>
+                <li className='list mt-2'> <GiPopcorn className='list-icon' /><Link className='list' to="/link1">Frozen</Link></li>
+              <div className='d-flex'> 
+              <div className='d-flex'>               
+                 <li className='carrot-icon'><PiCarrotThin className='list-icon' />
+             
+
+               <div className='dropdown '
                   onClick={toggleCollapse}
                   aria-controls="example-collapse-text"
-                  aria-expanded={open}
-                  variant="outline-primary" // You can customize the variant as needed
-                >gkhjkhjkh
+                  aria-expanded={open} >Vegetables
                   {open ? <IoIosArrowDown /> : <IoIosArrowForward />} 
                 </div>
-                <Collapse in={open}>
+                <Collapse className='dropdown-list'  in={open}>
                   <div id="example-collapse-text">
-                  <li>jdfsflkjalf</li>
-                  <li>jdfsflkjalf</li>
-                  <li>jdfsflkjalf</li>
+                  <li >Pears, apples, quinces</li>
+                  <li>Peaches, plums, apricots</li>
+                  <li>Grapes</li>
                   </div>
                 </Collapse>
                 </li>
+                </div>
+                </div> 
             </ul>
               <h6 className='categories'>Top Categories
                         <div className='code'>
@@ -83,15 +87,15 @@ function Section3() {
                         </div>
                      </h6> 
 
-                     <ul className='order'>
-                <li className='list mt-2'><LuMilk /><Link className='list' to="/link1">Dariry & Eggs</Link></li>
-                <li className='list mt-2'> <GiFrozenOrb /><Link className='list' to="/link1">Breakfast</Link></li>
-                <li className='list mt-2'> <GiPopcorn /><Link className='list' to="/link1">Frozen</Link></li>
-                <li className='list mt-2'> <GiHoneyJar /><Link className='list' to="/link1">Organic</Link></li>
-                <li className='list mt-2'> <CiPillsBottle1 /><Link className='list' to="/link1">Canned Food</Link></li>
-                <li className='list mt-2'> <GiHoneyJar /><Link className='list' to="/link1">Coffee & Snacks</Link></li>
-                <li className='list mt-2'> <GiHoneyJar /><Link className='list' to="/link1">Sauces & Jems</Link></li>
-</ul>
+               <ul className='order'>
+                <li className='list mt-2'><LuMilk className='list-icon' /><Link className='list' to="/link1">Dariry & Eggs</Link></li>
+                <li className='list mt-2'> <GiFrozenOrb className='list-icon' /><Link className='list' to="/link1">Breakfast</Link></li>
+                <li className='list mt-2'> <GiPopcorn className='list-icon' /><Link className='list' to="/link1">Frozen</Link></li>
+                <li className='list mt-2'> <GiHoneyJar className='list-icon' /><Link className='list' to="/link1">Organic</Link></li>
+                <li className='list mt-2'> <CiPillsBottle1 className='list-icon' /><Link className='list' to="/link1">Canned Food</Link></li>
+                <li className='list mt-2'> <GiHoneyJar className='list-icon'/><Link className='list' to="/link1">Coffee & Snacks</Link></li>
+                <li className='list mt-2'> <GiHoneyJar className='list-icon' /><Link className='list' to="/link1">Sauces & Jems</Link></li>
+              </ul>
 
         </div>
            </Col>
@@ -106,7 +110,7 @@ function Section3() {
       </Col>
       <Col className="first-carousel-col"md={6}>
         <div className='first-carousel-viewbtn'>
-          <span>View all<IoMdArrowDropright /></span>
+          <span>View all<IoMdArrowDropright  /></span>
 
         </div>
       </Col>

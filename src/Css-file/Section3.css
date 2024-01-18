@@ -1,62 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@300&display=swap');
+
 .categories{
        margin-left: 20px;
        padding-top: 10px;
        margin-bottom:0px;
-       font-weight: 600;
+       font-weight: 300;
+       font-family: 'Open Sans', sans-serif;
+       font-size: 16px;
+       color: rgb(43, 52, 69);
+
+     
 }
 
 .bor-2{
    
-      width: 40%;
+      width: 45%;
       height: 2px;
       background: rgb(223, 215, 215);    
       border: none;
       border-left: none;
 }
 .bor-1{
-  width: 40%;
-  height: 2px;
+  width: 45%;
+  height: 3px;
   float:inline-end;
   background: rgb(223, 13, 13);
   border:none;
-  border-bottom-right-radius: none;
-  border-top-right-radius: none;
+  border-radius: 20px;
+
 }
 .code{
   display:flex;
   margin-top: 5px;
 }
-li{
-    list-style-type: none;
+
   
-}
 .list{
     text-decoration: none;
     color: rgb(43, 52, 69);
     font-weight:600;
     font-size: 15px;
     margin-left: 10px;
-    margin-top: 15px;
+    margin-top: 25px;
+    padding-top: 7px;
+    list-style-type: none;
     
+}
+.list-icon{
+  width: 20px;
+  height: 20px;
+  font-weight: none;
 }
 
 .order{
   padding: 10px;
 }
 .dropdown{
-   margin-left: 15px;
+   text-decoration: none;
+   color: rgb(43, 52, 69);
+   font-weight:600;
+   font-size: 15px;
+   margin-left: 20px;
+   
+
+}
+.dropdown-list{
+  font-size: 15px;
+
 }
 #example-collapse-text{
-  margin-left: 15px;
+  margin-left: 28px;
 }
 .carrot-icon{
-  margin: 5px 10px;
+  margin: 15px 10px;
+
 }
 .carrot-icon:hover{
-  color:rgb(223, 13, 13);
+  color: rgb(233, 69, 96);
 }
 .list:hover{
-    color:rgb(223, 13, 13);
+  color: rgb(233, 69, 96);
 }
 .sidenav-bar{
      margin-bottom: 145px;
@@ -90,7 +113,7 @@ li{
   height: 500px;
 }
 .sidenav-bar{
-      margin-top: -1900px;
+      margin-top: -1970px;
 }
 
 .nav-row{
