@@ -8,8 +8,8 @@ function Section4() {
     <div  fluid className='banner-container'>
         <Container fluid className='p-5'>
             <Row className='banner-row mx-auto'>
-                <Col lg={3}></Col>
-                <Col lg={5} className='banner-col'>
+                <Col xl={3}></Col>
+                <Col xl={4} lg={6}  className='banner-col'>
 
                     <div className='banner-content'>
                         <p>Till 10 Dec, 2021</p>
@@ -20,7 +20,7 @@ function Section4() {
 
                     </div>
                 </Col>
-                <Col  className='banner-col'>
+                <Col xl={5} lg={6}    className='banner-col'>
                     <div >
                     <img className='banner-image' src={vegetables} alt='veg'/>
                     </div>

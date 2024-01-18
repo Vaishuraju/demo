@@ -7,9 +7,10 @@
 .banner-row{
      border-radius: 5px;
 }
+
 .banner-col{
 background-color: rgb(239, 239, 239);
-padding: 10px;
+padding: 5px;
 box-shadow: rgba(3, 0, 71, 0.09) 0px 1px 3px;
 }
 .banner-heading{
