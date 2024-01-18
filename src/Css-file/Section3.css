@@ -60,9 +60,20 @@
    color: rgb(43, 52, 69);
    font-weight:600;
    font-size: 15px;
-   margin-left: 20px;
-   
+   display:inline-block;
+}
+.dropdown:hover{
+  color: rgb(233, 69, 96);
 
+}
+.arrow-icon{
+     margin-left: 130px;
+}
+.second-arrow-icon{
+   margin-left: 67px;
+}
+.third-arrow-icon{
+   margin-left: 105px;
 }
 .dropdown-list{
   font-size: 15px;
@@ -71,15 +82,24 @@
 #example-collapse-text{
   margin-left: 28px;
 }
-.carrot-icon{
-  margin: 15px 10px;
+.carrot-icons{
+  margin:  0px 10px;
 
+}
+.carrot-icon{
+  width: 20px;
+  height: 20px;
+  font-weight: none;
 }
 .carrot-icon:hover{
   color: rgb(233, 69, 96);
 }
 .list:hover{
   color: rgb(233, 69, 96);
+}
+.dropdown-list:hover{
+  color: rgb(233, 69, 96);
+
 }
 .sidenav-bar{
      margin-bottom: 145px;

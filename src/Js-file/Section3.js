@@ -20,7 +20,9 @@ import Collapse from 'react-bootstrap/Collapse';
 import { IoMdArrowDropright } from "react-icons/io";
 import Section2sub1 from './Section2sub1.js';
 import Section2sub2 from './Section2sub2.js'
+import { CiApple } from "react-icons/ci";
 import Section2sub3 from './Section2sub3.js';
+
 
 
 
@@ -30,12 +32,25 @@ function Section3() {
 
   const [open, setOpen] = useState(false);
 
-  const toggleCollapse = () => {
+  const firstdropdown = () => {
     setOpen(!open);
 
   }
 
-  
+  const [secondopen, setSecondopen] = useState(false);
+
+  const seconddropdown = () => {
+    setSecondopen(!secondopen);
+
+
+  }
+ 
+  const [thirdopen, setThirdopen] = useState(false);
+
+  const thirddropdown = () => {
+    setThirdopen(!thirdopen);
+
+  }
   return (
     
     <div>
@@ -58,16 +73,10 @@ function Section3() {
                 <li className='list mt-2'><LuMilk className='list-icon' /><Link className='list' to="/link1">Dariry & Eggs</Link></li>
                 <li className='list mt-2'> <GiFrozenOrb className='list-icon' /><Link className='list' to="/link1">Breakfast</Link></li>
                 <li className='list mt-2'> <GiPopcorn className='list-icon' /><Link className='list' to="/link1">Frozen</Link></li>
-              <div className='d-flex'> 
-              <div className='d-flex'>               
-                 <li className='carrot-icon'><PiCarrotThin className='list-icon' />
-             
-
-               <div className='dropdown '
-                  onClick={toggleCollapse}
-                  aria-controls="example-collapse-text"
-                  aria-expanded={open} >Vegetables
-                  {open ? <IoIosArrowDown /> : <IoIosArrowForward />} 
+              <div className='d-flex'>   
+                  <div className='carrot-icons'><PiCarrotThin className="carrot-icon" />
+                 <div className='dropdown ' onClick={firstdropdown} aria-controls="example-collapse-text" aria-expanded={open} >Vegetables
+                  {open ? <IoIosArrowDown className='arrow-icon'/> : <IoIosArrowForward className='arrow-icon' />} 
                 </div>
                 <Collapse className='dropdown-list'  in={open}>
                   <div id="example-collapse-text">
@@ -76,7 +85,40 @@ function Section3() {
                   <li>Grapes</li>
                   </div>
                 </Collapse>
-                </li>
+                </div>
+                </div> 
+
+
+                <div className='d-flex'>   
+                  <div className='carrot-icons'><CiApple className="carrot-icon" />
+                 <div className='dropdown ' onClick={seconddropdown} aria-controls="example-collapse-text" aria-expanded={secondopen} >
+                  Fruits & Vegetables
+                  {open ? <IoIosArrowDown className='arrow-icon'/> : <IoIosArrowForward className='second-arrow-icon' />} 
+                </div>
+                <Collapse className='dropdown-list'  in={secondopen}>
+                  <div id="example-collapse-text">
+                  <li >Pears, apples, quinces</li>
+                  <li>Peaches, plums, apricots</li>
+                  <li>Grapes</li>
+                  </div>
+                </Collapse>
+                </div>
+                </div> 
+
+
+                <div className='d-flex'>   
+                  <div className='carrot-icons'><CiPillsBottle1  className="carrot-icon" />
+                 <div className='dropdown' onClick={thirddropdown} aria-controls="example-collapse-text" aria-expanded={thirdopen} >
+                  Dariry & Eggs
+                  {open ? <IoIosArrowDown className='arrow-icon'/> : <IoIosArrowForward className='third-arrow-icon' />} 
+                </div>
+                <Collapse className='dropdown-list'  in={thirdopen}>
+                  <div id="example-collapse-text">
+                  <li >Pears, apples, quinces</li>
+                  <li>Peaches, plums, apricots</li>
+                  <li>Grapes</li>
+                  </div>
+                </Collapse>
                 </div>
                 </div> 
             </ul>
