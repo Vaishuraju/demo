@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300&display=swap');
+
+
+.footer-section{
+   background-color: rgb(15, 52, 96);
+}
+.footer-section-image{
+    width: 20px;
+    height: 40px;
+    margin-left: 10px;
+}
+.footer-section-list{
+    list-style-type: none;
+    color: rgb(174, 180, 190);
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 40px 10px 10px 10px;
+
+}
