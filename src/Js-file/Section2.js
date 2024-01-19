@@ -4,6 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../Css-file/Section2.css'
 import { Col, Container, Row } from 'react-bootstrap';
+import { IoMdArrowDropright } from "react-icons/io";
 
 
 export default function Carousel() {

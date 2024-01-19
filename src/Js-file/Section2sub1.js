@@ -1,7 +1,9 @@
 import React from 'react';
 import '../Css-file/Section2.css'
 import '../Css-file/Section2sub.css'
-import { Container } from 'react-bootstrap';
+import { Container,Row,Col } from 'react-bootstrap';
+import { IoMdArrowDropright } from "react-icons/io";
+
 
 
 function Section2sub1() {
@@ -31,6 +33,21 @@ function Section2sub1() {
   
   return (
     <Container className='first-carousel-container'>
+           <Row className='first-carousel-row'>
+      <Col md={6}>
+      <div>     
+      <h3 className='first-carousel-products'>All Products</h3>
+      <p className='first-carousel-collections'>Best collection in 2021 for you!</p>
+      </div>
+
+      </Col>
+      <Col className="first-carousel-col"md={6}>
+        <div className='first-carousel-viewbtn'>
+          <span>View all<IoMdArrowDropright  /></span>
+
+        </div>
+      </Col>
+      </Row>
     <div className='first-carousel ms-auto'>
      
         {hotelCards.map((card, index) => (

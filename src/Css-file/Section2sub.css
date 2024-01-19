@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300&display=swap');
+
+
+
 .section2sub-row{
      width: 100%;
      margin-left: 5px;
@@ -15,6 +19,7 @@
      width: 31%;
      height: 100px;
      margin: 10px;
+     border-radius: 10px;
 }
 .first-carousel-image-fruit{
        width: 100%;
@@ -23,8 +28,16 @@
 .first-carousel-button{
      background-color: rgb(233, 69, 96) ;
      border: none;
-     font-weight:bold;
-     padding: 15px;
-   
-
+     font-weight:500;
+     padding: 10px 15px 10px 15px;
+     font-size: 15px;
+     font-family: 'Open Sans', sans-serif;
+     margin-top: -100px;
 }
+.first-carousel-button:hover{
+     background-color: rgb(233, 69, 96) ;
+}
+.first-carousel-container1{
+      margin-top: -70px;
+}
+

@@ -193,8 +193,8 @@ function Section3() {
 
         </div>
            </Col>
-           <Col className='Productss' lg={9}>
-           <Row className='first-carousel-row'>
+<Col className='Productss' lg={9}>
+<Row className='first-carousel-row'>
       <Col md={6}>
       <div>     
       <h3 className='first-carousel-products'>Popular Products</h3>
@@ -208,8 +208,7 @@ function Section3() {
 
         </div>
       </Col>
-      </Row>
-    
+    </Row>
            <Section2/>
            <Row className='first-carousel-row'>
       <Col md={6}>
@@ -221,36 +220,22 @@ function Section3() {
       </Col>
       <Col className="first-carousel-col"md={6}>
         <div className='first-carousel-viewbtn'>
-          <span>View all<IoMdArrowDropright /></span>
+          <span>View all<IoMdArrowDropright  /></span>
 
         </div>
       </Col>
-      </Row>
+    </Row>
            <Section2/>
-           <Row className='first-carousel-row'>
-      <Col md={6}>
-      <div>     
-      <h3 className='first-carousel-products'>All Products</h3>
-      <p className='first-carousel-collections'>Best collection in 2021 for you!</p>
-      </div>
-
-      </Col>
-      <Col className="first-carousel-col"md={6}>
-        <div className='first-carousel-viewbtn'>
-          <span>View all<IoMdArrowDropright /></span>
-
-        </div>
-      </Col>
-      </Row>
            <Section2sub1/>
            <Section2sub2/>
            <Section2sub3/>
-
-           </Col>
            <Section4/>
            <Section5/>
+           </Col>
+      
          </Row>
-        </Container>
+
+ </Container>
 
 
     </div>

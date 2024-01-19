@@ -34,9 +34,9 @@ function Section2sub3() {
     ]
   
   return (
-    <Container className='first-carousel-container'>
+    <Container className='first-carousel-container1'>
     <div className='first-carousel ms-auto'>
-     
+    
         {hotelCards.map((card, index) => (
           <div key={index} className='first-carousel-card1 '>
             <div className='first-carousel-color'>
@@ -54,7 +54,7 @@ function Section2sub3() {
         ))}
 
     </div>
-    <Button className='first-carousel-button mx-auto'>Load More...</Button>
+      <Button className='first-carousel-button '>Load More...</Button>
     </Container>
   );
 }

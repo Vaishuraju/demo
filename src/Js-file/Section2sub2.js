@@ -1,7 +1,8 @@
 import React from 'react';
 import '../Css-file/Section2.css'
 import '../Css-file/Section2sub.css'
-import { Container } from 'react-bootstrap';
+import { Container,Row,Col } from 'react-bootstrap';
+import { IoMdArrowDropright } from "react-icons/io";
 
 
 function Section2sub2() {
@@ -32,7 +33,8 @@ function Section2sub2() {
     ]
   
   return (
-    <Container className='first-carousel-container'>
+    <Container className='first-carousel-container1'>
+     
     <div className='first-carousel ms-auto'>
      
         {hotelCards.map((card, index) => (
