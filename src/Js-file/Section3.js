@@ -23,6 +23,7 @@ import Section2sub2 from './Section2sub2.js'
 import { CiApple } from "react-icons/ci";
 import Section2sub3 from './Section2sub3.js';
 import Section4 from './Section4.js'
+import Section5 from './Section5.js';
 
 
 
@@ -246,10 +247,12 @@ function Section3() {
            <Section2sub3/>
 
            </Col>
+           <Section4/>
+           <Section5/>
          </Row>
         </Container>
 
-<Section4/>
+
     </div>
   )
 }
