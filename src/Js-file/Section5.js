@@ -19,29 +19,29 @@ function Section5() {
         <Container fluid>
             <Row className='footer-section mx-auto' >
                 <Col className='border' xl={6}>
-                  <div>
-                    <img src={Bonik} alt='image'/>
-                    <p className='text-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et, in gravida. Sit diam duis mauris 
+                  <div className='footer-bonik-section'>
+                    <img className='footer-bonik-icon' src={Bonik} alt='image'/>
+                    <p className='footer-para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et, in gravida. Sit diam duis mauris 
                        nulla cursus. Erat et lectus vel ut sollicitudin elit at amet.</p>
                        <div className='footer-section-image d-flex'>
-                       <img src={Gpay} alt='img'/>
-                       <img src={Appstore} alt='img'/>
+                       <img  className='footer-section-gpay' src={Gpay} alt='img'/>
+                       <img className='footer-section-gpay' src={Appstore} alt='img'/>
                        </div>
                   </div>
                 </Col>
-                <Col className='border text-white' xl={6}>
+                <Col xl={6}>
                   <div className='footer-section-list'>
                   <li className='mt-2'>Help Center</li>
                   <li  className='mt-2'>Tract Your Order</li>
                   <li  className='mt-2'>Corporate & Bulk Purchasing</li>
                   <li  className='mt-2'>Returns & Refunds</li>
                   </div>
-                  <div className='d-flex'>
-                  <FaFacebook />
-                  <CgTwitter />
-                  <FaYoutubeSquare />
-                  <ImGoogle3 />
-                  <FaInstagramSquare />
+                  <div className='footer-social-icons d-flex'>
+                  <FaFacebook className='footer-social-icon' />
+                  <CgTwitter  className='footer-social-icon' />
+                  <FaYoutubeSquare  className='footer-social-icon' />
+                  <ImGoogle3  className='footer-social-icon' />
+                  <FaInstagramSquare  className='footer-social-icon' />
 
 
 
