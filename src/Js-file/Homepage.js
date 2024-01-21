@@ -10,7 +10,7 @@ import Left from '../Image/left.png'
 import '../Css-file/Homepage.css'
  
 
-function Homepage() {
+function Homepage(){
   return (
     <div>
     <Container fluid className='first-section' >
