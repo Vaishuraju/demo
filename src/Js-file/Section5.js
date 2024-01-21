@@ -16,10 +16,10 @@ import { FaInstagramSquare } from "react-icons/fa";
 function Section5() {
   return (
     <div>
-        <Container fluid>
+        <Container fluid className='footer-container'>
             <Row className='footer-section mx-auto' >
-                <Col className='border' xl={6}>
-                  <div className='footer-bonik-section'>
+                <Col xl={6}>
+                   <div className='footer-bonik-section'>
                     <img className='footer-bonik-icon' src={Bonik} alt='image'/>
                     <p className='footer-para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et, in gravida. Sit diam duis mauris 
                        nulla cursus. Erat et lectus vel ut sollicitudin elit at amet.</p>
@@ -42,9 +42,6 @@ function Section5() {
                   <FaYoutubeSquare  className='footer-social-icon' />
                   <ImGoogle3  className='footer-social-icon' />
                   <FaInstagramSquare  className='footer-social-icon' />
-
-
-
                   </div>
                 </Col>
             </Row>

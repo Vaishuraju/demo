@@ -5,10 +5,10 @@ import vegetables from '../Image/vagitable.png'
 
 function Section4() {
   return (
-    <div  fluid className='banner-container'>
-        <Container fluid className='p-5'>
-            <Row className='banner-row'>
-                <Col xl={7} lg={7}  className='banner-col'>
+    <div>
+        <Container fluid className='banner-container'>
+            <Row className='banner-row mx-auto'>
+                <Col lg={7}  className='banner-col'>
                     <div className='banner-content'>
                         <p className='banner-para'>Till 10 Dec, 2021</p>
                         <h1 className='banner-heading'>25% Special Off Today
@@ -18,7 +18,7 @@ function Section4() {
 
                     </div>
                 </Col>
-                <Col xl={5} lg={5} className='banner-col'>
+                <Col lg={5} className='banner-col'>
                     <div >
                     <img className='banner-image' src={vegetables} alt='veg'/>
                     </div>

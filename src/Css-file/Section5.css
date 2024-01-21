@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300&display=swap');
-
-
-.footer-section{
+.footer-container{
    background-color: rgb(15, 52, 96);
+
 }
 .footer-section-image{
     width: 20px;
