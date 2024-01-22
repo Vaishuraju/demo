@@ -20,7 +20,7 @@ export default function Carousel() {
       {
         breakpoint: 1024,
         settings: {
-         slidesToShow: 2,
+         slidesToShow: 3,
         }
       },
       {
@@ -74,8 +74,8 @@ export default function Carousel() {
     ]
   
   return (
-  <Container className='first-carousel-container'>
-    <div className='first-carousel ms-auto'>
+  <Container fluid className='first-carousel-container'>
+    <div className='first-carousel mx-auto'>
       <Slider ref={(slider) => setSliderRef(slider)} {...sliderSettings}>
         {hotelCards.map((card, index) => (
           <div key={index} className='first-carousel-card '>

@@ -1,43 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300&display=swap');
-.footer-container{
-   background-color: rgb(15, 52, 96);
+
+.footer-section{
+        width: 100%;
+        background-color: rgb(15, 52, 96);
+        border-radius: 8px;
 
 }
 .footer-section-image{
     width: 20px;
     height: 40px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .footer-section-list{
     list-style-type: none;
     color: rgb(174, 180, 190);
     font-family: sans-serif;
-    font-size: 17px;
-    padding: 40px 10px 10px 10px;
+    font-size: 15px;
+    margin: 50px 15px;
 
 }
 .footer-bonik-icon{
-    padding:15px 55px 15px 0px;
-    width: 50%;
+    width: 25%;
     height: 100px;
+    margin-left: 20px;
 }
 .footer-bonik-section{
-    margin:15px 0px 15px 35px;
+    margin:15px 0px 15px 0px;
 }
 .footer-para{
     color: rgb(174, 180, 190);
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 15px;
+    margin-left: 20px;
 }
 .footer-section-gpay{
           margin: 5px 5px 5px 0px;
 }
 .footer-social-icon{
-    width: 8%;
-    height: 40px;
-    padding: 10px;
-     margin: 35px 10px 5px 0px;
+     width: 8%;
+     height: 30px;
+     padding: 8px;
+     margin:5px 10px 5px 0px;
      border-radius: 100px;
-     background-color: black;
+     background-color:rgba(0, 0, 0, 0.2);
      color:white;
+    
 }

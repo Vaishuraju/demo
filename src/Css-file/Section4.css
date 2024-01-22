@@ -3,6 +3,9 @@
 
 .banner-container{
      background-color: rgb(246, 249, 252);   
+     margin-bottom: 40px;
+     border-radius: 10px;
+
 }
 .banner-content{
      margin: 50px 50px;
@@ -10,6 +13,7 @@
 .banner-row{
      border-radius: 5px;
      box-shadow: rgba(3, 0, 71, 0.09) 0px 1px 3px;
+     width: 100%;
 }
 
 .banner-col{

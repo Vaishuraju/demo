@@ -33,7 +33,7 @@ function Section2sub2() {
     ]
   
   return (
-    <Container className='first-carousel-container1'>
+    <Container fluid className='first-carousel-container1'>
      
     <div className='first-carousel ms-auto'>
      

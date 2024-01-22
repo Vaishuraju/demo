@@ -5,8 +5,8 @@ import vegetables from '../Image/vagitable.png'
 
 function Section4() {
   return (
-    <div>
-        <Container fluid className='banner-container'>
+    <div className='banner-container'>
+        <Container fluid >
             <Row className='banner-row mx-auto'>
                 <Col lg={7}  className='banner-col'>
                     <div className='banner-content'>

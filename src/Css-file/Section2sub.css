@@ -3,7 +3,6 @@
 
 
 .section2sub-row{
-     width: 100%;
      margin-left: 5px;
 }
 .first-carousel-card1{
@@ -25,6 +24,7 @@
        width: 100%;
        height: 260px;
 }
+
 .first-carousel-button{
      background-color: rgb(233, 69, 96) ;
      border: none;
@@ -40,4 +40,22 @@
 .first-carousel-container1{
       margin-top: -70px;
 }
+/* @media (max-width:1024px) {
+     .first-carousel {
+      background-color: rgb(76, 116, 69);
+     width: 100%;
+     }
+   }
+@media (max-width: 992px) {
+     .first-carousel {
+      background-color: rebeccapurple;
+   
+     }
+   }
 
+   @media (max-width: 768px) {
+     .first-carousel {
+     background-color: rgb(128, 0, 122);
+
+     }
+   } */

@@ -2,8 +2,8 @@
 
 .categories{
        margin-left: 20px;
-       padding-top: 10px;
-       margin-bottom:0px;
+       padding-top: 0px;
+       margin-bottom:10px;
        font-weight: 300;
        font-family: 'Open Sans', sans-serif;
        font-size: 16px;
@@ -61,6 +61,7 @@
    font-weight:600;
    font-size: 15px;
    display:inline-block;
+   margin-bottom: 2px;
 }
 .dropdown:hover{
   color: rgb(233, 69, 96);
@@ -74,6 +75,15 @@
 }
 .third-arrow-icon{
    margin-left: 105px;
+}
+.forth-arrow-icon{
+  margin-left: 105px;
+}
+.five-arrow-icon{
+  margin-left: 65px;
+}
+.six-arrow-icon{
+  margin-left: 40px;
 }
 .dropdown-list{
   font-size: 15px;

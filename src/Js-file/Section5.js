@@ -15,10 +15,10 @@ import { FaInstagramSquare } from "react-icons/fa";
 
 function Section5() {
   return (
-    <div>
-        <Container fluid className='footer-container'>
+    <div className=''>
+        <Container className='footer-container'>
             <Row className='footer-section mx-auto' >
-                <Col xl={6}>
+                <Col>
                    <div className='footer-bonik-section'>
                     <img className='footer-bonik-icon' src={Bonik} alt='image'/>
                     <p className='footer-para'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et, in gravida. Sit diam duis mauris 
@@ -29,7 +29,7 @@ function Section5() {
                        </div>
                   </div>
                 </Col>
-                <Col xl={6}>
+                <Col>
                   <div className='footer-section-list'>
                   <li className='mt-2'>Help Center</li>
                   <li  className='mt-2'>Tract Your Order</li>
