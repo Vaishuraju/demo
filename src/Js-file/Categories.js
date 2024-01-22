@@ -76,6 +76,8 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import USA  from '../Image/usa.png'
 import BN from '../Image/bd.png'
 import HN from '../Image/in.png'
+import EUR from '../Image/uk.png'
+
 
 
 function Categories() {
@@ -83,28 +85,36 @@ function Categories() {
     <div>
 
 
-    <div className='blue'>
-      <Container className='width'>
-        <Row className=''>
-          <Col className='container-col' >
+    <div className='categories-home'>
+      <Container>
+        <Row className='categories-row'>
+          <Col sm={4} md={6} lg={6} className='container-col' >
             <div className='d-flex'>
           <HiOutlinePhone className='white-icon'/><div className='white-text'>+88012 3456 7894</div>
           <CiMail  className='mail-icon'/>
           <div className='white-text'>support@ui-lib.com</div>
           </div>
           </Col>
-          <Col className=''>
+          <Col sm={4} md={3}lg={3} className=''>
           <div className='d-flex'>
-             <div className='right-white-text'>Theme FAQ"s</div>
-             <div className='right-white-text'>Need Help?</div>
-      
-    <Dropdown>
+             <div className='d-flex categories-section d-none d-sm-none d-md-none d-lg-block'>
+                    <span className='d-flex categories-para'>Theme FAQ"s</span>
+              </div>
+             <div className='d-flex categories-section d-none d-sm-none d-md-none d-lg-block'>
+
+                    <span className='d-flex categories-para'>Need Help?</span>
+            </div>
+            </div>
+          </Col>
+          
+    <Col sm={4} lg={3} className='ms-auto'>
+    <Dropdown >
   
       <Dropdown.Toggle id="dropdown-basic">
       <img className='usa-image' src={USA} alt='usa'/>
             EN
       </Dropdown.Toggle>
-      <Dropdown.Menu>
+      <Dropdown.Menu className='dropdown-list'>
         <Dropdown.Item className='dropdown-list-sub'>
         <img className='sub-image' src={USA} alt='usa'/>EN
         </Dropdown.Item>
@@ -116,8 +126,29 @@ function Categories() {
         <img className='sub-image' src={HN} alt='usa'/>HN</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
-    </div>
 
+       
+    <Dropdown>
+  
+      <Dropdown.Toggle id="dropdown-basic">
+      <img className='usa-image' src={USA} alt='usa'/>
+            USD
+      </Dropdown.Toggle>
+      <Dropdown.Menu className='dropdown-list'>
+      <Dropdown.Item className='dropdown-list-sub'>
+        <img className='sub-image' src={USA} alt='usa'/>USD
+        </Dropdown.Item>
+        <Dropdown.Item className='dropdown-list-sub'>
+        <img className='sub-image' src={EUR} alt='usa'/>EUR
+        </Dropdown.Item>
+        <Dropdown.Item className='dropdown-list-sub'>        
+        <img className='sub-image' src={BN} alt='usa'/>BDT
+        </Dropdown.Item>
+        <Dropdown.Item className='dropdown-list-sub'>
+
+        <img className='sub-image' src={HN} alt='usa'/>INR</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
           </Col>
         </Row>
       </Container>
