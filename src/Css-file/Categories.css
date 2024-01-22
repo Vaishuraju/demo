@@ -34,3 +34,26 @@
 .option:hover{
     background-color: red;
 }
+#dropdown-basic{
+        border-radius: none;
+        background-color:rgb(15, 52, 96);
+        border-color:rgb(15, 52, 96) ;
+        font-size: 12px;
+        margin-top: 6px;
+        font-weight: bold;
+}
+.usa-image{
+     width: 25px;
+     height: 15px;
+     border-radius: 5px;
+     margin:0px  10px;
+}
+.sub-image{
+    margin: 0px 5px;
+    border-radius: 2px;
+    font-size: 12px;
+}
+.dropdown-list-sub{
+      font-size: 12px;
+      font-weight: 500;
+}

@@ -69,11 +69,13 @@ import React from 'react'
 import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
-import '../Css-file/Link1.css'
+import '../Css-file/Categories.css'
 import { HiOutlinePhone } from "react-icons/hi2";
 import { CiMail } from "react-icons/ci";
-import { Dropdown } from 'bootstrap';
-
+import Dropdown from 'react-bootstrap/Dropdown';
+import USA  from '../Image/usa.png'
+import BN from '../Image/bd.png'
+import HN from '../Image/in.png'
 
 
 function Categories() {
@@ -95,14 +97,27 @@ function Categories() {
           <div className='d-flex'>
              <div className='right-white-text'>Theme FAQ"s</div>
              <div className='right-white-text'>Need Help?</div>
-             <select>
-              <option className='option'>djjf</option>
-              <option>djjf</option>
-              <option>djjf</option>
-              <option>djjf</option>
-              <option>djjf</option>
-             </select>
-          </div>
+      
+    <Dropdown>
+  
+      <Dropdown.Toggle id="dropdown-basic">
+      <img className='usa-image' src={USA} alt='usa'/>
+            EN
+      </Dropdown.Toggle>
+      <Dropdown.Menu>
+        <Dropdown.Item className='dropdown-list-sub'>
+        <img className='sub-image' src={USA} alt='usa'/>EN
+        </Dropdown.Item>
+        <Dropdown.Item className='dropdown-list-sub'>        
+        <img className='sub-image' src={BN} alt='usa'/>BN
+        </Dropdown.Item>
+        <Dropdown.Item className='dropdown-list-sub'>
+
+        <img className='sub-image' src={HN} alt='usa'/>HN</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+    </div>
+
           </Col>
         </Row>
       </Container>

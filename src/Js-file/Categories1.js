@@ -2,11 +2,11 @@ import React from 'react'
 import Col from 'react-bootstrap/esm/Col'
 import Container from 'react-bootstrap/esm/Container'
 import Row from 'react-bootstrap/esm/Row'
-import '../Css-file/Last.css'
+import '../Css-file/Categories1.css'
 import Categorieslogo from '../Image/logo.svg'
 
 
-function Last() {
+function Categories1() {
   return (
     <div>
         <Container className='bg-secondary'>
@@ -22,4 +22,4 @@ function Last() {
   )
 }
 
-export default Last
+export default Categories1

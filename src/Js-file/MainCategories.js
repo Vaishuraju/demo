@@ -1,12 +1,12 @@
 import React from 'react'
 import Categories from './Categories'
-import Last from './Last'
+import Categories1 from './Categories1'
 
 function MainCategories() {
   return (
     <div>
     <Categories/>
-    <Last/>
+    {/* <Categories1/> */}
     </div>
   )
 }
