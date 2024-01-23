@@ -15,7 +15,7 @@ function Categories1() {
     <div>
        <Container >
     <Row>
-       <Col lg={3} className='bg-danger'>
+       <Col lg={3}  className='bg-danger'>
        <img src={Logo} alt="logo" className='sec-logo' />
 
        </Col>
