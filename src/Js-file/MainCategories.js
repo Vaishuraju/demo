@@ -6,7 +6,7 @@ function MainCategories() {
   return (
     <div>
     <Categories/>
-    {/* <Categories1/> */}
+    <Categories1/>
     </div>
   )
 }
