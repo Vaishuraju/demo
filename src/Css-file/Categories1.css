@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .categories1-input{
     border-radius: 5px;
     height: 45px;
@@ -6,4 +7,37 @@
     font-weight: none;
     font-weight: none;
     font-family: 'Open Sans', sans-serif;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+
+  
+.categories-input:focus{
+    border: 1px solid red;
+    box-shadow: none;
+    border-left: none;
+}
+.categories-icon{
+    margin: 30px;
+    padding-left: 25px;
+    position:absolute;
+    width: 20%;
+    height: 20px;
+
+}
+.categories-sub-input{
+    margin-top: 20px;
+    border-radius: 50px;
+    height: 45px;
+    outline: none;
+    padding-left: 50px;
+    font-size: 15px;
+    width: 100%;
+    color:  rgb(218, 225, 231);
+    font-family: 'Open Sans', sans-serif;
+
+}
+.categories-sub-input:hover{
+        border: 1px solid rgb(233, 69, 96);
+        box-shadow: none;
+>>>>>>> 65f2a144af87c23b20b82a62df59a6dfd289694a
 }

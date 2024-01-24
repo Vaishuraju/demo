@@ -5,9 +5,32 @@ import 'slick-carousel/slick/slick-theme.css';
 import '../Css-file/Section2.css'
 import { Col, Container, Row } from 'react-bootstrap';
 import { IoMdArrowDropright } from "react-icons/io";
+import { useSelector, useDispatch } from 'react-redux';
+import {increment,decrement} from './Counter'
 
 
 export default function Carousel() {
+
+  const counter = useSelector(state => state.counter);
+  const dispatch = useDispatch();
+
+
+  const [incremented, setIncremented] = useState(false);
+
+  const handleIncrement = () => {
+    dispatch(increment());
+    setIncremented(true);
+  };
+
+  const handleDecrement = () => {
+    dispatch(decrement());
+    setIncremented(true);
+  };
+
+
+
+
+
   const [sliderRef, setSliderRef] = useState();
 
   const sliderSettings = {
@@ -87,6 +110,16 @@ export default function Carousel() {
             <div className='d-flex' >
             <span className='first-carousel-rating d-flex'>{card.amount}</span> 
             <span className='first-carousel-deleted' ><del>{card.amount}</del></span>
+
+            <div className='d-flex align-items-end'>    
+            
+      <button className='first-carousel-btn' onClick={handleIncrement}>+</button>
+      </div>
+        <div>  <p>{counter}</p></div>
+        {incremented &&(
+      <div>
+      <button className='first-carousel-btn' onClick={handleDecrement}>-</button>
+           </div>)}
             </div>
             </div>
           </div>

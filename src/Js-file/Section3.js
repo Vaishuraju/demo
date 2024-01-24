@@ -81,7 +81,7 @@ function Section3() {
                   Vegetables
                   {open ? <IoIosArrowDown className='arrow-icon'/> : <IoIosArrowForward className='arrow-icon' />} 
                 </div>
-                <Collapse className='dropdown-list'  in={open}>
+                <Collapse className='dropdown-lists'  in={open}>
                   <div id="example-collapse-text">
                   <li >Pears, apples, quinces</li>
                   <li>Peaches, plums, apricots</li>
@@ -92,13 +92,13 @@ function Section3() {
                 </div> 
 
 
-                <div className='d-flex'>   
+                <div className='d-flex mt-2'>   
                   <div className='carrot-icons'><CiApple className="carrot-icon" />
                  <div className='dropdown ' onClick={seconddropdown} aria-controls="example-collapse-text" aria-expanded={secondopen} >
                   Fruits & Vegetables
                   {open ? <IoIosArrowDown className='arrow-icon'/> : <IoIosArrowForward className='second-arrow-icon' />} 
                 </div>
-                <Collapse className='dropdown-list'  in={secondopen}>
+                <Collapse className='dropdown-lists'  in={secondopen}>
                   <div id="example-collapse-text">
                   <li >Pears, apples, quinces</li>
                   <li>Peaches, plums, apricots</li>
@@ -109,13 +109,13 @@ function Section3() {
                 </div> 
 
 
-                <div className='d-flex' >   
+                <div className='d-flex mt-2' >   
                   <div className='carrot-icons '><CiPillsBottle1  className="carrot-icon" />
                  <div className='dropdown ' onClick={thirddropdown} aria-controls="example-collapse-text" aria-expanded={thirdopen} >
                   Dariry & Eggs
                   {open ? <IoIosArrowDown className='arrow-icon'/> : <IoIosArrowForward className='third-arrow-icon' />} 
                 </div>
-                <Collapse className='dropdown-list'  in={thirdopen}>
+                <Collapse className='dropdown-lists'  in={thirdopen}>
                   <div id="example-collapse-text">
                   <li >Pears, apples, quinces</li>
                   <li>Peaches, plums, apricots</li>
@@ -134,13 +134,13 @@ function Section3() {
 
                <ul className='order'>
 
-               <div >   
+               <div className='mt-2'>   
                   <div className='carrot-icons'><PiCarrotThin className="carrot-icon" />
                  <div className='dropdown ' onClick={firstdropdown} aria-controls="example-collapse-text" aria-expanded={open} >
                    Fish and Mil
                   {open ? <IoIosArrowDown className='arrow-icon'/> : <IoIosArrowForward className='forth-arrow-icon' />} 
                 </div>
-                <Collapse className='dropdown-list'  in={open}>
+                <Collapse className='dropdown-lists'  in={open}>
                   <div id="example-collapse-text">
                   <li >Pears, apples, quinces</li>
                   <li>Peaches, plums, apricots</li>
@@ -149,13 +149,13 @@ function Section3() {
                 </Collapse>
                 </div>
                 </div> 
-                <div>   
+                <div className='mt-2'>   
                   <div className='carrot-icons'><CiApple className="carrot-icon" />
                  <div className='dropdown ' onClick={firstdropdown} aria-controls="example-collapse-text" aria-expanded={open} >
                   Health and beauty
                   {open ? <IoIosArrowDown className='arrow-icon'/> : <IoIosArrowForward className='five-arrow-icon' />} 
                 </div>
-                <Collapse className='dropdown-list'  in={open}>
+                <Collapse className='dropdown-lists'  in={open}>
                   <div id="example-collapse-text">
                   <li >Onion</li>
                   <li>Potato</li>
@@ -164,13 +164,13 @@ function Section3() {
                 </Collapse>
                 </div>
                 </div> 
-                <div >   
+                <div className='mt-2'>   
                   <div className='carrot-icons'><CiPillsBottle1 className="carrot-icon" />
                  <div className='dropdown ' onClick={firstdropdown} aria-controls="example-collapse-text" aria-expanded={open} >
                  Dress and something
                   {open ? <IoIosArrowDown className='arrow-icon'/> : <IoIosArrowForward className='six-arrow-icon' />} 
                 </div>
-                <Collapse className='dropdown-list'  in={open}>
+                <Collapse className='dropdown-lists'  in={open}>
                   <div id="example-collapse-text">
                   <li >Pears, apples, quinces</li>
                   <li>Peaches, plums, apricots</li>
