@@ -20,8 +20,8 @@ function Categories1() {
 
        </Col>
        <Col lg={7} className='mx-auto'>
-       <InputGroup className='next-input'>
-              <Form.Control className='next-input1' placeholder='Search and hit enter...'/>
+       <InputGroup className='categories1-input bg-danger'>
+              <Form.Control className='categories1-subinput' placeholder='Search and hit enter...'/>
               <div className='icon'><IoIosSearch /></div>
 
             
