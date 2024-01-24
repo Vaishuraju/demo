@@ -15,6 +15,22 @@ export default function Carousel() {
   const dispatch = useDispatch();
 
 
+  const [incremented, setIncremented] = useState(false);
+
+  const handleIncrement = () => {
+    dispatch(increment());
+    setIncremented(true);
+  };
+
+  const handleDecrement = () => {
+    dispatch(decrement());
+    setIncremented(true);
+  };
+
+
+
+
+
   const [sliderRef, setSliderRef] = useState();
 
   const sliderSettings = {
@@ -97,12 +113,13 @@ export default function Carousel() {
 
             <div className='d-flex align-items-end'>    
             
-      <button onClick={() => dispatch(increment())}>+</button>
+      <button className='first-carousel-btn' onClick={handleIncrement}>+</button>
       </div>
         <div>  <p>{counter}</p></div>
+        {incremented &&(
       <div>
-      <button onClick={() => dispatch(decrement())}>-</button>
-           </div>
+      <button className='first-carousel-btn' onClick={handleDecrement}>-</button>
+           </div>)}
             </div>
             </div>
           </div>
