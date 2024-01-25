@@ -7,3 +7,18 @@
     font-weight: none;
     font-family: 'Open Sans', sans-serif;
 }
+.categories-form{
+    border-radius: none;
+    border: none;
+    transition: none;
+}
+.categories-option{
+      color: gray;
+}
+.categories-form:focus{
+    border-color:black;
+    box-shadow: none;
+}
+.form-select{
+    color: gray;
+}

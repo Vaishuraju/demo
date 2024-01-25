@@ -9,37 +9,9 @@ import { IoBagOutline } from "react-icons/io5";
 import { IoIosSearch } from "react-icons/io";
 import InputGroup from 'react-bootstrap/InputGroup';
 import '../Css-file/Categories1.css'
-import { Dropdown } from 'react-bootstrap';
-import { useState } from 'react';
 
 function Categories1() {
-  const [dropdownItems, setDropdownItems] = useState([
-    { key: 'action-1', label: 'Action' },
-    { key: 'action-2', label: 'Another action' },
-    { key: 'action-3', label: 'Something else' },
-  ]);
-
-  const handleItemClick = (eventKey) => {
-    // Perform your operation based on the selected item
-    console.log(`Clicked on item with event key: ${eventKey}`);
-    // Add your custom logic here
-  };
-
-  const changeList = (newItems) => {
-    setDropdownItems(newItems);
-  };
-
-  const defaultList = [
-    { key: 'action-1', label: 'Action' },
-    { key: 'action-2', label: 'Another action' },
-    { key: 'action-3', label: 'Something else' },
-  ];
-
-  const newList = [
-    { key: 'new-action-1', label: 'New Action 1' },
-    { key: 'new-action-2', label: 'New Action 2' },
-    { key: 'new-action-3', label: 'New Something Else' },
-  ];
+ 
   return (
     <div>
        <Container >
@@ -48,40 +20,26 @@ function Categories1() {
        <img src={Logo} alt="logo" className='sec-logo' />
 
        </Col>
-       <Col lg={7} className='mx-auto'>
-<<<<<<< HEAD
-       <InputGroup className='categories1-input bg-danger'>
-              <Form.Control className='categories1-subinput' placeholder='Search and hit enter...'/>
-              <div className='icon'><IoIosSearch /></div>
-=======
+       <Col lg={7} className='mx-auto bg-danger'>
+
        <InputGroup className='categories-input'>
               <Form.Control className='categories-sub-input' placeholder='Search and hit enter...'/>
               <div className='categories-icon'><IoIosSearch /></div>
->>>>>>> 65f2a144af87c23b20b82a62df59a6dfd289694a
-
-
-              <Dropdown>
-                <Dropdown.Toggle variant='success' id='dropdown-basic'
-                onClick={() => changeList(newList)}>
-                  Dropdown Button
-                </Dropdown.Toggle>
-
-                <Dropdown.Menu>
-                  {dropdownItems.map((item) => (
-                    <Dropdown.Item
-                      key={item.key}
-                      eventKey={item.key}
-                      onClick={() => {
-                        handleItemClick(item.key);
-                      }}
-                    >
-                    hello
-                    </Dropdown.Item>
-                  ))}
-                </Dropdown.Menu>
-              </Dropdown>
     
-    
+             <div> 
+          <InputGroup>      
+             <Form.Select className='categories-form'>
+              <option className='categories-option'>All Categories</option>
+              <option className='categories-option' value="1">Car</option>
+              <option className='categories-option' value="2">Clothes</option>
+              <option className='categories-option' value="3">Electronics</option>
+              <option className='categories-option' value="2">Laptop</option>
+            </Form.Select>
+            </InputGroup> 
+
+            </div>
+        
+
           </InputGroup>
        </Col>
        <Col lg={2}>
