@@ -1,11 +1,16 @@
-.categories1-input{
-    border-radius: 5px;
-    height: 45px;
+.categories-sub-input{
+    border-color: gray;  
+    border-radius: 30px;
+}
+.categories-sub-input:hover{
+    border: 1px solid red;
+    box-shadow: none;
+    border-left: none;
+}
+.categories-sub-input:focus{
+    box-shadow: none;
     outline: none;
-    margin-left: 16px;
-    font-weight: none;
-    font-weight: none;
-    font-family: 'Open Sans', sans-serif;
+    border-color:gray;
 }
 .categories-form{
     border-radius: none;
@@ -21,4 +26,9 @@
 }
 .form-select{
     color: gray;
+}
+.categories-icon{
+    margin: 10px 0px 0px 0px;
+    padding-left: 10px;
+    position:absolute;
 }
