@@ -13,21 +13,21 @@ import '../Css-file/Categories1.css'
 function Categories1() {
  
   return (
-    <div>
-       <Container >
+    <div className='bg-danger'>
+       <Container className='mb-3'>
     <Row>
-       <Col lg={3}  className=''>
+       <Col lg={3} >
        <img src={Logo} alt="logo" className='sec-logo' />
 
        </Col>
-       <Col lg={7} className='mx-auto bg-danger'>
+       <Col lg={7} className='mx-auto mt-3'>
 
-       <InputGroup className='categories-input'>
+       <InputGroup className='categories-search-input'>
               <Form.Control className='categories-sub-input' placeholder='Search and hit enter...'/>
-              <div className='categories-icon'><IoIosSearch /></div>
+              <div className='categories-search-icon'><IoIosSearch /></div>
     
-             <div> 
-          <InputGroup>      
+             <div className='categories-dropdown'> 
+         
              <Form.Select className='categories-form'>
               <option className='categories-option'>All Categories</option>
               <option className='categories-option' value="1">Car</option>
@@ -35,17 +35,14 @@ function Categories1() {
               <option className='categories-option' value="3">Electronics</option>
               <option className='categories-option' value="2">Laptop</option>
             </Form.Select>
-            </InputGroup> 
-
+       
             </div>
-        
-
           </InputGroup>
        </Col>
-       <Col lg={2}>
-       <div><CiUser  className='user-icon'/><IoBagOutline  className='sec-bag' /></div>
+       <Col lg={2} className=' ms-auto'>
+       <div className='categories-icon'><CiUser  className='categories-user-icon '/><IoBagOutline  className='categories-bag-icon ' /></div>
        </Col>
-    </Row>
+    </Row> 
     </Container>
     </div>
   )

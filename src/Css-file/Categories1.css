@@ -1,24 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@1000&display=swap');
 .categories-sub-input{
-    border-color: gray;  
+    border-color: rgb(163, 163, 165);  
     border-radius: 30px;
+    padding-left: 35px;
+    font-family: 'Open Sans', sans-serif;
+    border-top-right-radius: 30px;
+    padding: 10px;
+
 }
 .categories-sub-input:hover{
     border: 1px solid red;
     box-shadow: none;
-    border-left: none;
+
 }
 .categories-sub-input:focus{
     box-shadow: none;
     outline: none;
-    border-color:gray;
+    border-color:rgb(235, 9, 9);
 }
 .categories-form{
-    border-radius: none;
-    border: none;
     transition: none;
+    border-left: none;
+    margin-right: 10px;
+    border-color: gray;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px;
+    border-radius: 30px;
+ 
+
+}
+.input-group{
+    border-radius:30px;
+    border-color: #a3a3a5;  
+    padding: 5px;
+    border-bottom-left-radius: none;
+    border-top-right-radius: none;
+
 }
 .categories-option{
       color: gray;
+    
 }
 .categories-form:focus{
     border-color:black;
@@ -27,8 +49,26 @@
 .form-select{
     color: gray;
 }
-.categories-icon{
-    margin: 10px 0px 0px 0px;
-    padding-left: 10px;
+.categories-search-icon{
+    margin: 7px 0px 0px 0px;
+    padding-left: 15px;
     position:absolute;
+
+}
+.categories-user-icon{
+    margin-top: 10px;
+    width: 30%;
+    height: 50px;
+    margin-left: 60px;
+    padding: 10px;
+    border-radius: 70px;
+    background-color: rgb(202, 186, 186);
+}
+.categories-bag-icon{
+      margin-top: 10px;
+      width: 30%;
+      height: 50px;
+      padding: 10px;
+      border-radius: 70px;
+      background-color: rgb(202, 186, 186);
 }
