@@ -13,8 +13,8 @@ import '../Css-file/Categories1.css'
 function Categories1() {
  
   return (
-    <div className='bg-danger'>
-       <Container className='mb-3'>
+    <div className='categories'>
+       <Container>
     <Row>
        <Col lg={3} >
        <img src={Logo} alt="logo" className='sec-logo' />
