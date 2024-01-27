@@ -15,8 +15,8 @@ function Categories1() {
   return (
     <div className='categories'>
        <Container>
-    <Row>
-       <Col lg={3} >
+    <Row className='categories-row'>
+       <Col lg={3} className=' d-icons d-none d-md-none d-lg-block' >
        <img src={Logo} alt="logo" className='sec-logo' />
 
        </Col>
@@ -26,7 +26,7 @@ function Categories1() {
               <Form.Control className='categories-sub-input' placeholder='Search and hit enter...'/>
               <div className='categories-search-icon'><IoIosSearch /></div>
     
-             <div className='categories-dropdown'> 
+             <div className='categories-dropdown d-icons d-none d-md-none d-lg-block '> 
          
              <Form.Select className='categories-form'>
               <option className='categories-option'>All Categories</option>
@@ -39,7 +39,7 @@ function Categories1() {
             </div>
           </InputGroup>
        </Col>
-       <Col lg={2} className=' ms-auto'>
+       <Col lg={2} className=' d-icons d-none d-md-none d-lg-block '>
        <div className='categories-icon'><CiUser  className='categories-user-icon '/><IoBagOutline  className='categories-bag-icon ' /></div>
        </Col>
     </Row> 
