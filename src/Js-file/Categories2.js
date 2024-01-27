@@ -20,26 +20,10 @@ function Categories2() {
     <div className='categories mt-2'>
         <Container>
             <Row>
-                <Col className='border'>
-
-                {/* <Dropdown>
-      <Dropdown.Toggle className='dropdown' onClick={firstdropdown} aria-controls="example-collapse-text" aria-expanded={open} variant="success" id="dropdown-basic">
-      Vegetables
-      {open ? <IoIosArrowDown className='arrow-icon'/> : <IoIosArrowForward className='arrow-icon' />} 
-      </Dropdown.Toggle>
-
-      <Dropdown.Menu Name='dropdown-lists' in={open}>
-        <div className='example-collapse-text'>
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-        </div>
-      </Dropdown.Menu>
-    </Dropdown> */}
-     <div className=' mt-3'>
-      <div className='carrot-icons'>
+                <Col className='categories2-col bg '>
+     <div className='mt-3'>
         <div
-          className='dropdown '
+          className='categories2-label'
           onClick={firstDropdown}
           aria-controls="example-collapse-text"
           aria-expanded={open}
@@ -48,13 +32,12 @@ function Categories2() {
           {open ? <IoIosArrowDown className='arrow-icon'/> : <IoIosArrowForward className='arrow-icon' />}
         </div>
         {open && (
-          <div className='dropdown-lists' id="example-collapse-text">
+          <div className='categories2-dropdown' id="example-collapse-text">
             <li>Pears, apples, quinces</li>
             <li>Peaches, plums, apricots</li>
             <li>Grapes</li>
           </div>
         )}
-      </div>
     </div>
 
                 </Col>

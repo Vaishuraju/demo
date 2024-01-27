@@ -16,11 +16,11 @@ function Categories1() {
     <div className='categories'>
        <Container>
     <Row className='categories-row'>
-       <Col lg={3} className=' d-icons d-none d-md-none d-lg-block' >
+       <Col lg={2} className=' d-icons d-none d-md-none d-lg-block' >
        <img src={Logo} alt="logo" className='sec-logo' />
 
        </Col>
-       <Col lg={7} className='mx-auto mt-3'>
+       <Col lg={6} className='mx-auto mt-3'>
 
        <InputGroup className='categories-search-input'>
               <Form.Control className='categories-sub-input' placeholder='Search and hit enter...'/>

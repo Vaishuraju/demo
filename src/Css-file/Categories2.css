@@ -1,0 +1,10 @@
+.categories2-dropdown{
+    position: absolute;
+    background-color: antiquewhite;
+}
+.categories2-label{
+      background-color: rgb(246, 249, 252);
+      padding: 10px;
+      width: 45%;
+      border-radius: 10px;
+}
