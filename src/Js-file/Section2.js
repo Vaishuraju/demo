@@ -16,6 +16,8 @@ export default function Carousel() {
 
 
   const [incremented, setIncremented] = useState(false);
+  const [visible,setVisible]=useState(false)
+  const [visible1,setVisible1]=useState(false)
 
   const handleIncrement = () => {
     dispatch(increment());
@@ -26,6 +28,12 @@ export default function Carousel() {
     dispatch(decrement());
     setIncremented(true);
   };
+    const click=()=>{
+         setVisible(!visible)
+    }
+    const click1=()=>{
+      setVisible1(!visible1)
+ }
 
 
 
@@ -97,6 +105,7 @@ export default function Carousel() {
     ]
   
   return (
+    <div>
   <Container fluid className='first-carousel-container'>
     <div className='first-carousel mx-auto'>
       <Slider ref={(slider) => setSliderRef(slider)} {...sliderSettings}>
@@ -115,10 +124,10 @@ export default function Carousel() {
             
       <button className='first-carousel-btn' onClick={handleIncrement}>+</button>
       </div>
-        <div>  <p>{counter}</p></div>
+        <div><p>{counter}</p></div>
         {incremented &&(
       <div>
-      <button className='first-carousel-btn' onClick={handleDecrement}>-</button>
+      <button className='second-carousel-btn' onClick={handleDecrement}>-</button>
            </div>)}
             </div>
             </div>
@@ -127,5 +136,18 @@ export default function Carousel() {
       </Slider>
     </div>
     </Container>
+    <div className='dot'>
+         <div  onClick={click}  className='dot1'>
+          {visible && (
+          <div className='below-dot1'></div>
+          )}
+         </div>
+         <div onClick={click1} className='dot2'>
+         {visible1 && (
+         <div className='below-dot2'></div>
+         )}
+         </div>
+   </div>
+         </div>
   );
 }

@@ -10,6 +10,7 @@
 .first-carousel-container{
   background-color: rgb(246, 249, 252);
 }
+
 .first-carousel-card{
      height:410px;
      padding: 10px;
@@ -67,8 +68,10 @@
   border-radius: 10px;
 }
 .slick-arrow{
-         background-color: blue;
          border-radius: 10px;
+}
+.slick-arrow{
+     background-color: gray;
 }
 .first-carousel-products{
    font-weight: 600;
@@ -104,4 +107,55 @@
     margin-left: 30px;
     color: red;
     border-radius: 5px;
+}
+.second-carousel-btn{
+  padding: 5px 15px 5px 15px;
+  margin-top: -40px;
+  border: 1px solid red;
+  margin-bottom: 100px;
+  margin-left: 30px;
+  color: red;
+  border-radius: 5px;
+}
+.dot1{
+     width: 15px;
+     border-radius: 10px;
+     height: 15px;
+     border: 1px solid rgb(15, 52, 96);
+     position:absolute;
+     left: 450px;
+
+}
+.dot2{
+  width: 15px;
+  border-radius: 10px;
+  height: 15px;
+  position:absolute;
+  margin-left: 10px;
+  border: 1px solid rgb(15, 52, 96);
+  left: 460px;
+}
+.dot{
+  display: flex;
+  position: relative;
+}
+.below-dot1{
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: rgb(15, 52, 96);
+}
+.below-dot2{
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: rgb(15, 52, 96);
 }
