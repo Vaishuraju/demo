@@ -16,8 +16,7 @@ export default function Carousel() {
 
 
   const [incremented, setIncremented] = useState(false);
-  const [visible,setVisible]=useState(false)
-  const [visible1,setVisible1]=useState(false)
+ 
 
   const handleIncrement = () => {
     dispatch(increment());
@@ -28,17 +27,6 @@ export default function Carousel() {
     dispatch(decrement());
     setIncremented(true);
   };
-    const click=()=>{
-         setVisible(!visible)
-    }
-    const click1=()=>{
-      setVisible1(!visible1)
- }
-
-
-
-
-
   const [sliderRef, setSliderRef] = useState();
 
   const sliderSettings = {
@@ -136,18 +124,7 @@ export default function Carousel() {
       </Slider>
     </div>
     </Container>
-    <div className='dot'>
-         <div  onClick={click}  className='dot1'>
-          {visible && (
-          <div className='below-dot1'></div>
-          )}
-         </div>
-         <div onClick={click1} className='dot2'>
-         {visible1 && (
-         <div className='below-dot2'></div>
-         )}
-         </div>
-   </div>
+
          </div>
   );
 }
