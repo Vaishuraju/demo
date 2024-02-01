@@ -2,7 +2,7 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Market from '../Image/market.png'
+import Market from '../Image/money.webp'
 import Deliver from '../Image/delivery.png'
 import Timer  from '../Image/timer.png'
 import Payment from '../Image/payment.png'
@@ -28,7 +28,7 @@ function Section1() {
          <Col className='main  px-3' sm={12} md={6}>
         <div className='color'>           
            <div className='step d-flex'>
-               <img src={Market} alt='image' className='market'/>
+               <img src={Market} alt='image' className='money'/>
                   <div className='para d-flex'>
                      <p className='para1'><strong>Money Guarantee</strong> <br/> <span className='light'>Start from $10</span></p>
                   </div> 

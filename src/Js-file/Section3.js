@@ -64,7 +64,7 @@ function Section3() {
             <Row className='nav-row mx-auto'>
                 <Col lg={3} className='sidenav-bar sticky-top d-none d-md-none d-xl-block'>
                     <div className='col-scroll'>
-                    <h6 className='categories'>Top Categories
+                    <h6 className='side-bar mt-2'>Top Categories
                         <div className='code'>
                             <span className='bor-1 ' ></span>
                             <span className=' bor-2'></span>
@@ -125,7 +125,7 @@ function Section3() {
                 </div>
                 </div> 
             </ul>
-              <h6 className='categories'>Top Categories
+              <h6 className='side-bar '>Top Categories
                         <div className='code'>
                             <span className='bor-1 ' ></span>
                             <span className=' bor-2'></span>
